@@ -145,7 +145,7 @@ blockquote p {
     animation : pulsate 1s ease-out;
     animation-iteration-count: infinite;
     opacity :0.0;
-    box-shadow: 0 0 1px 3px #4DB7FE;
+    box-shadow: 0 0 1px 3px #f7873d;
 }
 @keyframes pulsate{
   0%{
@@ -3452,12 +3452,12 @@ article .list-single-main-item {
 .onoffswitch-inner:before {
     content: "ON";
     padding-left: 21px;
-    background-color: #4DB7FE; color: #FFFFFF;
+    background-color: #f7873d; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
     content: "OFF";
     padding-right: 21px;
-    background-color: #4DB7FE; color: #FFFFFF;
+    background-color: #f7873d; color: #FFFFFF;
     text-align: right;
 }
 .onoffswitch-switch {
@@ -4673,7 +4673,7 @@ article .list-single-main-item {
 }
 .testimonilas-avatar-item:before{
 	border-color:  transparent;
-	border-top-color: #4DB7FE;
+	border-top-color: #f7873d;
 	border-width: 14px;
 	margin-left: -14px;
 }
@@ -6478,7 +6478,7 @@ footer.main-footer.fixed-footer {
 	height:4px;
 	margin-left:-25px;
 	border-radius:4px;
-	background:#4DB7FE;
+	background:#f7873d;
 }
 .booking-modal-info_content ul li {
 	float:left;

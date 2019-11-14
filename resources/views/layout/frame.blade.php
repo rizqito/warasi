@@ -29,7 +29,7 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index-2.html"><img src="{{ asset('template/katalog/images/logo.png') }}" alt=""></a>
+                        <a href="index-2.html"><img src="{{ asset('template/katalog/images/logo3.png') }}" alt=""></a>
                     </div>
                     <div class="header-search vis-header-search">
                         <div class="header-search-input-item">
