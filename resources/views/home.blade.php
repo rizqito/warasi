@@ -62,7 +62,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/1.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>10 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">TV, LCD, Proyektor</a></h3>
+                                                <h3><a href="{{ route('list') }}">TV, LCD, Proyektor</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>

@@ -6,12 +6,12 @@
     <div class="content">
         <!--section -->
         <section class="parallax-section" data-scrollax-parent="true">
-            <div class="bg par-elem "  data-bg="{{ asset('template/katalog/images/bg/6.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="{{ asset('template/katalog/images/bg/23.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
             <div class="container">
                 <div class="section-title center-align">
-                    <h2><span>Our News - Blog</span></h2>
-                    <div class="breadcrumbs fl-wrap"><a href="#">Home</a><span>Blog</span></div>
+                    <h2><span>Blog Post Title</span></h2>
+                    <div class="breadcrumbs fl-wrap"><a href="#">Home</a><a href="#">Blog</a><span>Blog Single</span></div>
                     <span class="section-separator"></span>
                 </div>
             </div>
@@ -41,10 +41,16 @@
                                 </div>
                                 <div class="list-single-main-item fl-wrap">
                                     <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
+                                        <h3>Aliquam erat volutpat. Curabitur convallis.</h3>
                                     </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
+                                    <p>
+                                        Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis vitae..
+                                    </p>
+                                    <p>Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi. Cu nam tale ferri utroque, eu habemus albucius mel, cu vidit possit ornatus eum. Eu ius postulant salutatus definitionem,  explicari. Graeci viderer qui ut, at habeo facer solet usu. Pri choro pertinax indoctum ne, ad partiendo persecuti forensibus est.</p>
+                                    <blockquote>
+                                        <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+                                    </blockquote>
+                                    <p>Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi. Cu nam tale ferri utroque, eu habemus albucius mel, cu vidit possit ornatus eum. Eu ius postulant salutatus definitionem, an e trud erroribus explicari. Graeci viderer qui ut, at habeo facer solet usu. Pri choro pertinax indoctum ne, ad partiendo persecuti forensibus est.</p>
                                     <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
                                     <div class="post-opt">
                                         <ul>
@@ -62,130 +68,99 @@
                                         <a href="#">Conference</a>
                                         <a href="#">Strategies</a>
                                         <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
+                                    </div>
+                                    <div class="share-holder hid-share">
+                                        <div class="showshare"><span>Share </span><i class="fa fa-share"></i></div>
+                                        <div class="share-container  isShare"></div>
                                     </div>
                                     <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
+                                    <div class="post-nav fl-wrap">
+                                        <a href="#" class="post-link prev-post-link"><i class="fa fa-angle-left"></i>Prev <span class="clearfix">The Sign of Experience</span></a>
+                                        <a href="#" class="post-link next-post-link"><i class="fa fa-angle-right"></i>Next<span class="clearfix">Dedicated to Results</span></a>
+                                    </div>
                                 </div>
                             </article>
                             <!-- article end -->       
                             <span class="section-separator"></span>
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-media fl-wrap">
-                                    <a href="{{ route('blogSingle') }}"><img src="{{ asset('template/katalog/images/all/9.jpg') }}" alt=""></a>
+                            <!-- list-single-main-item -->   
+                            <div class="list-single-main-item fl-wrap" id="sec4">
+                                <div class="list-single-main-item-title fl-wrap">
+                                    <h3>Comments -  <span> 3 </span></h3>
                                 </div>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
+                                <div class="reviews-comments-wrap">
+                                    <!-- reviews-comments-item -->  
+                                    <div class="reviews-comments-item">
+                                        <div class="review-comments-avatar">
+                                            <img src="{{ asset('template/katalog/images/avatar/1.jpg') }}" alt=""> 
+                                        </div>
+                                        <div class="reviews-comments-item-text">
+                                            <a href="#" class="new-dashboard-item">Reply</a>
+                                            <h4><a href="#">Jessie Manrty</a></h4>
+                                            <div class="clearfix"></div>
+                                            <p>" Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris. "</p>
+                                            <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>27 May 2018</span>
+                                        </div>
                                     </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
+                                    <!--reviews-comments-item end-->  
+                                    <!-- reviews-comments-item -->  
+                                    <div class="reviews-comments-item reply-comment-item ">
+                                        <div class="review-comments-avatar">
+                                            <img src="{{ asset('template/katalog/images/avatar/2.jpg') }}" alt=""> 
+                                        </div>
+                                        <div class="reviews-comments-item-text">
+                                            <a href="#" class="new-dashboard-item">Reply</a>
+                                            <h4><a href="#">Mark Rose</a></h4>
+                                            <div class="clearfix"></div>
+                                            <p>" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
+                                            <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>12 April 2018</span>
+                                        </div>
                                     </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
+                                    <!--reviews-comments-item end--> 
+                                    <!-- reviews-comments-item -->  
+                                    <div class="reviews-comments-item">
+                                        <div class="review-comments-avatar">
+                                            <img src="{{ asset('template/katalog/images/avatar/3.jpg') }}" alt=""> 
+                                        </div>
+                                        <div class="reviews-comments-item-text">
+                                            <a href="#" class="new-dashboard-item">Reply</a>
+                                            <h4><a href="#">Adam Koncy</a></h4>
+                                            <div class="clearfix"></div>
+                                            <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. Cras metus neque, gravida sodales massa ut. "</p>
+                                            <span class="reviews-comments-item-date"><i class="fa fa-calendar-check-o"></i>03 December 2017</span>
+                                        </div>
                                     </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
+                                    <!--reviews-comments-item end-->                                                                  
                                 </div>
-                            </article>
-                            <!-- article end -->                               
-                            <span class="section-separator"></span>
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
-                                    </div>
-                                    <blockquote>
-                                        <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                                    </blockquote>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
-                                </div>
-                            </article>
-                            <!-- article end -->      
-                            <span class="section-separator"></span>
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-media fl-wrap">
-                                    <a href="{{ route('blogSingle') }}"><img src="{{ asset('template/katalog/images/all/12.jpg') }}" alt=""></a>
-                                </div>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
-                                    </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
-                                </div>
-                            </article>
-                            <!-- article end -->                               
-                            <div class="pagination">
-                                <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
-                                <a href="#" class="current-page">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
                             </div>
+                            <!-- list-single-main-item end -->   
+                            <!-- list-single-main-item -->   
+                            <div class="list-single-main-item fl-wrap" id="sec5">
+                                <div class="list-single-main-item-title fl-wrap">
+                                    <h3>Add Comment</h3>
+                                </div>
+                                <!-- Add Review Box -->
+                                <div id="add-review" class="add-review-box">
+                                    <!-- Review Comment -->
+                                    <form id="add-comment" class="add-comment custom-form">
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label><i class="fa fa-user-o"></i></label>
+                                                    <input type="text" placeholder="Your Name *" value=""/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label><i class="fa fa-envelope-o"></i>  </label>
+                                                    <input type="text" placeholder="Email Address*" value=""/>
+                                                </div>
+                                            </div>
+                                            <textarea cols="40" rows="3" placeholder="Your Review:"></textarea>
+                                        </fieldset>
+                                        <button class="btn  big-btn  color-bg flat-btn">Submit Comment <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                <!-- Add Review Box / End -->
+                            </div>
+                            <!-- list-single-main-item end -->                                
                         </div>
                     </div>
                     <!--box-widget-wrap -->
@@ -212,7 +187,7 @@
                                 <div class="box-widget list-author-widget">
                                     <div class="list-author-widget-header shapes-bg-small  color-bg fl-wrap">
                                         <span class="list-author-widget-link"><a href="author-single.html">Alisa Noory</a></span>
-                                        <img src="images/avatar/4.jpg" alt=""> 
+                                        <img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""> 
                                     </div>
                                     <div class="box-widget-content">
                                         <div class="list-author-widget-text">
@@ -241,28 +216,28 @@
                                     <div class="box-widget-content">
                                         <ul>
                                             <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/1.jpg') }}"  alt=""></a>
+                                                <a href="#"  class="widget-posts-img"><img src="{{asset('template/katalog/images/all/1.jpg')}}"  alt=""></a>
                                                 <div class="widget-posts-descr">
                                                     <a href="#" title="">Cafe "Lollipop"</a>
                                                     <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 21 Mar 2017 </span> 
                                                 </div>
                                             </li>
                                             <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/2.jpg') }}"  alt=""></a>
+                                                <a href="#"  class="widget-posts-img"><img src="{{asset('template/katalog/images/all/2.jpg')}}"  alt=""></a>
                                                 <div class="widget-posts-descr">
                                                     <a href="#" title=""> Apartment in the Center</a>
                                                     <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span> 
                                                 </div>
                                             </li>
                                             <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/3.jpg') }}"  alt=""></a>
+                                                <a href="#"  class="widget-posts-img"><img src="{{asset('template/katalog/images/all/3.jpg')}}"  alt=""></a>
                                                 <div class="widget-posts-descr">
                                                     <a href="#" title="">Event in City Mol</a>
                                                     <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span>
                                                 </div>
                                             </li>
                                             <li class="clearfix">
-                                                <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/4.jpg') }}"  alt=""></a>
+                                                <a href="#"  class="widget-posts-img"><img src="{{asset('template/katalog/images/all/4.jpg')}}"  alt=""></a>
                                                 <div class="widget-posts-descr">
                                                     <a href="#" title="">Event in City Mol</a>
                                                     <span class="widget-posts-date"><i class="fa fa-calendar-check-o"></i> 7 Mar 2017 </span>
@@ -345,10 +320,12 @@
                 </div>
             </div>
         </section>
+        <!--section end -->
         <div class="limit-box fl-wrap"></div>
+        <!--section -->
         <section class="gradient-bg">
             <div class="cirle-bg">
-                <div class="bg" data-bg="images/bg/circle.png"></div>
+                <div class="bg" data-bg="{{ asset('template/katalog/images/bg/circle.png') }}"></div>
             </div>
             <div class="container">
                 <div class="join-wrap fl-wrap">
@@ -362,9 +339,9 @@
                 </div>
             </div>
         </section>
-        <!-- section end -->
+        <!--section end -->
     </div>
-    <!-- content end -->
+    <!--content end --> 
 </div>
 <!-- wrapper end -->
 @endsection

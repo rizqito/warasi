@@ -17,4 +17,12 @@ class HomeController extends Controller
     public function tentangKami(){
     	return view('tentangKami');
     }
+
+    public function list(){
+    	return view('list');
+    }
+
+    public function beritaSingle(){
+        return view('berita-single');
+    }
 }

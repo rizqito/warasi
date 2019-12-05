@@ -200,12 +200,23 @@
                             <div class="tab">
                                 <div id="tab-1" class="tab-content">
                                     <div class="custom-form">
-                                        <form method="post"  name="registerform">
-                                            <label>Username atau Alamat Email * </label>
-                                            <input name="email" type="text"   onClick="this.select()" value="">
-                                            <label >Password * </label>
-                                            <input name="password" type="password"   onClick="this.select()" value="" >
-                                            <button type="submit"  class="log-submit-btn"><span>Login</span></button>
+                                        <form method="post"  name="registerform" action="{{ url('/admin/login') }}">
+                                            {{ csrf_field() }}                                            
+                                            <label class="{{ $errors->has('email') ? ' has-error' : '' }}">Username atau Alamat Email * </label>
+                                            <input name="email" type="text" onClick="this.select()" value="{{ old('email') }}">
+                                            @if ($errors->has('email'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
+                                            <label class="{{ $errors->has('password') ? ' has-error' : '' }}">Password * </label>
+                                            <input name="password" type="password" onClick="this.select()" value="" >
+                                            @if ($errors->has('password'))
+                                                <span class="help-block">
+                                                    <strong>{{ $errors->first('password') }}</strong>
+                                                </span>
+                                            @endif
+                                            <button type="submit" class="log-submit-btn"><span>Login</span></button>
                                             <div class="clearfix"></div>
                                             <div class="filter-tags">
                                                 <input id="check-a" type="checkbox" name="check">
@@ -220,16 +231,37 @@
                                 <div class="tab">
                                     <div id="tab-2" class="tab-content">
                                         <div class="custom-form">
-                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
-                                                <label >Nama Depan * </label>
-                                                <input name="name" type="text"   onClick="this.select()" value="">
-                                                <label>Nama Belakang *</label>
-                                                <input name="name2" type="text"  onClick="this.select()" value="">
-                                                <label>Alamat Email *</label>
-                                                <input name="email" type="text"  onClick="this.select()" value="">
-                                                <label >Password *</label>
-                                                <input name="password" type="password"   onClick="this.select()" value="" >
-                                                <button type="submit"     class="log-submit-btn"  ><span>Daftar</span></button>
+                                            <form method="post" name="registerform" class="main-register-form" id="main-register-form2" action="{{ url('/admin/register') }}">
+                                                {{ csrf_field() }}
+                                                <label class="{{ $errors->has('name') ? ' has-error' : '' }}">Nama Kamu * </label>
+                                                <input name="name" type="text" onClick="this.select()" value="{{ old('name') }}">
+                                                @if ($errors->has('name'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('name') }}</strong>
+                                                    </span>
+                                                @endif
+                                                <label class="{{ $errors->has('email') ? ' has-error' : '' }}">Alamat Email *</label>
+                                                <input name="email" type="text" onClick="this.select()" value="{{ old('email') }}">
+                                                @if ($errors->has('email'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('email') }}</strong>
+                                                    </span>
+                                                @endif
+                                                <label class="{{ $errors->has('password') ? ' has-error' : '' }}">Password *</label>
+                                                <input name="password" type="password" onClick="this.select()">
+                                                @if ($errors->has('password'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('password') }}</strong>
+                                                    </span>
+                                                @endif
+                                                <label class="{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">Konfirmasi Password *</label>
+                                                <input name="password_confirmation" type="password" onClick="this.select()" value="">
+                                                @if ($errors->has('password_confirmation'))
+                                                    <span class="help-block">
+                                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                                    </span>
+                                                @endif
+                                                <button type="submit" class="log-submit-btn"><span>Daftar</span></button>
                                             </form>
                                         </div>
                                     </div>
