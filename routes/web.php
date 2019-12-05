@@ -44,3 +44,17 @@ Route::group(['prefix' => 'user'], function () {
   Route::get('/password/reset', 'UserAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'UserAuth\ResetPasswordController@showResetForm');
 });
+
+Route::group(['prefix' => 'mitra'], function () {
+  Route::get('/login', 'MitraAuth\LoginController@showLoginForm')->name('login');
+  Route::post('/login', 'MitraAuth\LoginController@login');
+  Route::post('/logout', 'MitraAuth\LoginController@logout')->name('logout');
+
+  Route::get('/register', 'MitraAuth\RegisterController@showRegistrationForm')->name('register');
+  Route::post('/register', 'MitraAuth\RegisterController@register');
+
+  Route::post('/password/email', 'MitraAuth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
+  Route::post('/password/reset', 'MitraAuth\ResetPasswordController@reset')->name('password.email');
+  Route::get('/password/reset', 'MitraAuth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
+  Route::get('/password/reset/{token}', 'MitraAuth\ResetPasswordController@showResetForm');
+});

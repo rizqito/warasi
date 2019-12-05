@@ -36,6 +36,11 @@ return [
     */
 
     'guards' => [
+        'mitra' => [
+            'driver' => 'session',
+            'provider' => 'mitras',
+        ],
+
         'user' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -76,6 +81,11 @@ return [
     */
 
     'providers' => [
+        'mitras' => [
+            'driver' => 'eloquent',
+            'model' => App\Mitra::class,
+        ],
+
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Admin::class,
@@ -108,6 +118,12 @@ return [
     */
 
     'passwords' => [
+        'mitras' => [
+            'provider' => 'mitras',
+            'table' => 'mitra_password_resets',
+            'expire' => 60,
+        ],
+
         'users' => [
             'provider' => 'users',
             'table' => 'user_password_resets',
