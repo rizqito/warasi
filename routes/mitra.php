@@ -3,10 +3,10 @@
 Route::get('/home', function () {
     $users[] = Auth::user();
     $users[] = Auth::guard()->user();
-    $users[] = Auth::guard('jasa')->user();
+    $users[] = Auth::guard('mitra')->user();
 
     //dd($users);
 
-    return view('jasa.home');
+    return view('mitra.home');
 })->name('home');
 

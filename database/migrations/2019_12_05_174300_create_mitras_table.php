@@ -16,6 +16,10 @@ class CreateMitrasTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('no_telp',15);
+            $table->text('alamat');
+            $table->string('foto');
+            $table->text('deskripsi');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

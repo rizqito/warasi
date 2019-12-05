@@ -1,4 +1,4 @@
-@extends('jasa.layout.auth')
+@extends('mitra.layout.auth')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/jasa/login') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/mitra/login') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -54,7 +54,7 @@
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ url('/jasa/password/reset') }}">
+                                <a class="btn btn-link" href="{{ url('/mitra/password/reset') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>
