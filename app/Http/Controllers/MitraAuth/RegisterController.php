@@ -51,6 +51,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:mitras',
+            'no_telp' => 'required|max:15',
             'password' => 'required|min:6|confirmed',
         ]);
     }
@@ -66,6 +67,7 @@ class RegisterController extends Controller
         return Mitra::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'no_telp' => $data['no_telp'],
             'password' => bcrypt($data['password']),
         ]);
     }

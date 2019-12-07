@@ -1,4 +1,4 @@
-@extends('jasa.layout.auth')
+@extends('mitra.layout.auth')
 
 @section('content')
 <div class="container">

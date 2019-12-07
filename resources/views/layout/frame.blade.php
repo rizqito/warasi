@@ -187,86 +187,8 @@
                         <div class="close-reg"><i class="fa fa-times"></i></div>
                         <h3>Login <span>Wa<strong>Rasi</strong></span></h3>
                         <div class="soc-log fl-wrap">
-                            <p>Untuk masuk atau mendaftar lebih cepat gunakan akun sosial.</p>
-                            <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Login dengan Facebook</a>
-                            <a href="#" class="twitter-log"><i class="fa fa-google"></i> Login dengan Google</a>
-                        </div>
-                        <div class="log-separator fl-wrap"><span>atau</span></div>
-                        <div id="tabs-container">
-                            <ul class="tabs-menu">
-                                <li class="current"><a href="#tab-1">Login</a></li>
-                                <li><a href="#tab-2">Daftar</a></li>
-                            </ul>
-                            <div class="tab">
-                                <div id="tab-1" class="tab-content">
-                                    <div class="custom-form">
-                                        <form method="post"  name="registerform" action="{{ url('/admin/login') }}">
-                                            {{ csrf_field() }}                                            
-                                            <label class="{{ $errors->has('email') ? ' has-error' : '' }}">Username atau Alamat Email * </label>
-                                            <input name="email" type="text" onClick="this.select()" value="{{ old('email') }}">
-                                            @if ($errors->has('email'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('email') }}</strong>
-                                                </span>
-                                            @endif
-                                            <label class="{{ $errors->has('password') ? ' has-error' : '' }}">Password * </label>
-                                            <input name="password" type="password" onClick="this.select()" value="" >
-                                            @if ($errors->has('password'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('password') }}</strong>
-                                                </span>
-                                            @endif
-                                            <button type="submit" class="log-submit-btn"><span>Login</span></button>
-                                            <div class="clearfix"></div>
-                                            <div class="filter-tags">
-                                                <input id="check-a" type="checkbox" name="check">
-                                                <label for="check-a">Remember me</label>
-                                            </div>
-                                        </form>
-                                        <div class="lost_password">
-                                            <a href="#">Kamu Lupa Password ?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab">
-                                    <div id="tab-2" class="tab-content">
-                                        <div class="custom-form">
-                                            <form method="post" name="registerform" class="main-register-form" id="main-register-form2" action="{{ url('/admin/register') }}">
-                                                {{ csrf_field() }}
-                                                <label class="{{ $errors->has('name') ? ' has-error' : '' }}">Nama Kamu * </label>
-                                                <input name="name" type="text" onClick="this.select()" value="{{ old('name') }}">
-                                                @if ($errors->has('name'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('name') }}</strong>
-                                                    </span>
-                                                @endif
-                                                <label class="{{ $errors->has('email') ? ' has-error' : '' }}">Alamat Email *</label>
-                                                <input name="email" type="text" onClick="this.select()" value="{{ old('email') }}">
-                                                @if ($errors->has('email'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('email') }}</strong>
-                                                    </span>
-                                                @endif
-                                                <label class="{{ $errors->has('password') ? ' has-error' : '' }}">Password *</label>
-                                                <input name="password" type="password" onClick="this.select()">
-                                                @if ($errors->has('password'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('password') }}</strong>
-                                                    </span>
-                                                @endif
-                                                <label class="{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">Konfirmasi Password *</label>
-                                                <input name="password_confirmation" type="password" onClick="this.select()" value="">
-                                                @if ($errors->has('password_confirmation'))
-                                                    <span class="help-block">
-                                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                                    </span>
-                                                @endif
-                                                <button type="submit" class="log-submit-btn"><span>Daftar</span></button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="{{ url('/user/login') }}" class="facebook-log"><i class="fa fa-users"></i>Login Sebagai Pengguna</a>
+                            <a href="{{ url('/mitra/login') }}" class="facebook-log"><i class="fa fa-users"></i> Login Sebagai Mitra</a>
                         </div>
                     </div>
                 </div>

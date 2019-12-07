@@ -1,4 +1,4 @@
-@extends('jasa.layout.auth')
+@extends('mitra.layout.auth')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/jasa/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/mitra/register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -33,6 +33,20 @@
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('no_telp') ? ' has-error' : '' }}">
+                            <label for="no_telp" class="col-md-4 control-label">no_telp</label>
+
+                            <div class="col-md-6">
+                                <input id="no_telp" type="no_telp" class="form-control" name="no_telp" value="{{ old('no_telp') }}">
+
+                                @if ($errors->has('no_telp'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('no_telp') }}</strong>
                                     </span>
                                 @endif
                             </div>
