@@ -15,10 +15,10 @@
 	color:#FACC39;
 }
 .gradient-bg , .listing-geodir-category  ,     .list-single-header-cat a , .box-widget-item .list-single-tags a:hover  , .nav-holder nav li a:before{
-  background-color: #3EAAFD;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3EAAFD), to(#49CEFF));
-  background: -webkit-linear-gradient(top, #3EAAFD, #49CEFF);
-  background: -moz-linear-gradient(top, #3EAAFD, #49CEFF);
-  background: -ms-linear-gradient(top, #3EAAFD, #49CEFF);
-  background: -o-linear-gradient(top, #3EAAFD, #49CEFF);
+  background-color: #2f3b59;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f3b59), to(#24469d));
+  background: -webkit-linear-gradient(top, #2f3b59, #24469d);
+  background: -moz-linear-gradient(top, #2f3b59, #24469d);
+  background: -ms-linear-gradient(top, #2f3b59, #24469d);
+  background: -o-linear-gradient(top, #2f3b59, #24469d);
 }

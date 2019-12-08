@@ -6,12 +6,12 @@
                 <div class="content">
                     <!--section -->
                     <section class="scroll-con-sec hero-section" data-scrollax-parent="true" id="sec1">
-                        <div class="bg"  data-bg="images/bg/32.jpg" data-scrollax="properties: { translateY: '200px' }"></div>
+                        <div class="bg"  data-bg="{{ asset('template/katalog/images/bg/bg.jpg') }}" data-scrollax="properties: { translateY: '200px' }"></div>
                         <div class="overlay"></div>
                         <div class="hero-section-wrap fl-wrap">
                             <div class="container">
                                 <div class="intro-item fl-wrap">
-                                    <h2>Temukan Jasa Service Favoritmu</h2>
+                                    <h2>Temukan Wadah Reparasi Favoritmu</h2>
                                 </div>
                                 <div class="main-search-input-wrap">
                                     <div class="main-search-input fl-wrap">
@@ -59,7 +59,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="{{ asset('template/katalog/images/all/1.jpg') }}"   alt="">
+                                            <img  src="{{ asset('template/katalog/images/all/kat-1.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>10 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{ route('list') }}">TV, LCD, Proyektor</a></h3>
@@ -73,7 +73,7 @@
                                 <div class="gallery-item gallery-item-second">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="{{ asset('template/katalog/images/bg/19.jpg') }}"   alt="">
+                                            <img  src="{{ asset('template/katalog/images/all/kat-2.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Kulkas, Frezzer</a></h3>
@@ -87,7 +87,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="{{ asset('template/katalog/images/all/3.jpg') }}"   alt="">
+                                            <img  src="{{ asset('template/katalog/images/all/kat-3.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>21 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Mesin Cuci</a></h3>
@@ -101,7 +101,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="{{ asset('template/katalog/images/all/22.jpg') }}"   alt="">
+                                            <img  src="{{ asset('template/katalog/images/all/kat-4.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>7 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Komputer, Laptop, Notebook, Printer</a></h3>
@@ -115,7 +115,7 @@
                                 <div class="gallery-item">
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
-                                            <img  src="{{ asset('template/katalog/images/all/5.jpg') }}"   alt="">
+                                            <img  src="{{ asset('template/katalog/images/all/kat-5.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="listing.html">Handphone, Gadget, Tab</a></h3>
@@ -138,7 +138,7 @@
                                 <h2>Populer</h2>
                                 <div class="section-subtitle">Populer</div>
                                 <span class="section-separator"></span>
-                                <p>Nulla tristique mi a massa convallis cursus. Nulla eu mi magna.</p>
+                                <p>Daftar Wadah Reparasi Populer Saat Ini.</p>
                             </div>
                         </div>
                         <!-- carousel -->
@@ -157,9 +157,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Retail</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">Event in City Mol</a></h3>
                                                 <p>Sed interdum metus at nisi tempor laoreet.  </p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -186,9 +183,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Handphone, Gadget, Tab</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/2.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">Siap Cell</a></h3>
                                                 <p>Morbi suscipit erat in diam bibendum rutrum in nisl.</p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -215,9 +209,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Komputer, Laptop, Notebook, Printer </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/4.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">Lancar Jaya</a></h3>
                                                 <p>Morbiaccumsan ipsum velit tincidunt . </p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -244,9 +235,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Mesin Cuci</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">Mantap Jaya</a></h3>
                                                 <p>Morbiaccumsan ipsum velit tincidunt . </p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -273,9 +261,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">Handphone, Gadget, Tab</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/6.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">AC Bersaudara</a></h3>
                                                 <p>Lorem ipsum gravida nibh vel velit.</p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -302,9 +287,6 @@
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">TV, LCD, Proyektor</a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/3.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Adam Koncy</strong></span>
-                                                </div>
                                                 <h3><a href="listing-single.html">SIJAGOKOM</a></h3>
                                                 <p>Sed non neque elit. Sed ut imperdie.</p>
                                                 <div class="geodir-category-options fl-wrap">
@@ -334,7 +316,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="images-collage fl-wrap">
-                                        <div class="images-collage-title">Warasi<span> in</span></div>
+                                        <div class="images-collage-title">Wa<span>rasi</span></div>
                                         <div class="images-collage-main images-collage-item"><img src="{{ asset('template/katalog/images/avatar/1.jpg') }}" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="23" data-position-top="10" data-zindex="2"><img src="{{asset('template/katalog/images/avatar/2.jpg')}}" alt=""></div>
                                         <div class="images-collage-other images-collage-item" data-position-left="62" data-position-top="54" data-zindex="5"><img src="{{asset('template/katalog/images/avatar/4.jpg')}}" alt=""></div>
@@ -344,7 +326,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="color-bg-text">
-                                        <h3>Temukan Jasa Service Favoritmu Disini</h3>
+                                        <h3>Temukan Wadah Reparasi Favoritmu Disini</h3>
                                         <a href="#" class="color-bg-link modal-open">Daftar Sekarang</a>
                                     </div>
                                 </div>
@@ -437,7 +419,7 @@
                                 <h2>Testimoni</h2>
                                 <div class="section-subtitle">Clients Reviews</div>
                                 <span class="section-separator"></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                                <p>Testimoni dari layanan wadah reparasi.</p>
                             </div>
                         </div>
                         <!-- testimonials-carousel -->

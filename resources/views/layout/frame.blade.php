@@ -76,9 +76,9 @@
             <footer class="main-footer dark-footer  ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="footer-widget fl-wrap">
-                                <h3>About Us</h3>
+                                <h3>Tentang Kami</h3>
                                 <div class="footer-contacts-widget fl-wrap">
                                     <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
                                     <ul  class="footer-contacts fl-wrap">
@@ -89,27 +89,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="footer-widget fl-wrap">
                                 <h3>Our Last News</h3>
                                 <div class="widget-posts fl-wrap">
                                     <ul>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/1.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/1.jpg') }}" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Vivamus dapibus rutrum</a>
                                                 <span class="widget-posts-date"> 21 Mar 09.05 </span>
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/2.jpg') }}" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title=""> In hac habitasse platea</a>
                                                 <span class="widget-posts-date"> 7 Mar 18.21 </span>
                                             </div>
                                         </li>
                                         <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="images/all/3.jpg" class="respimg" alt=""></a>
+                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/3.jpg') }}" class="respimg" alt=""></a>
                                             <div class="widget-posts-descr">
                                                 <a href="#" title="">Tortor tempor in porta</a>
                                                 <span class="widget-posts-date"> 7 Mar 16.42 </span>
@@ -119,13 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget fl-wrap">
-                                <h3>Our  Twitter</h3>
-                                <div id="footer-twiit"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="footer-widget fl-wrap">
                                 <h3>Subscribe</h3>
                                 <div class="subscribe-widget fl-wrap">
