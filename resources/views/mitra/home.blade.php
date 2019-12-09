@@ -1,4 +1,4 @@
-@extends('mitra.layout.auth')
+@extends('mitra.layout.frame')
 
 @section('content')
 <div class="container">

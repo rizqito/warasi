@@ -34,7 +34,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/jasa') }}">
+                <a class="navbar-brand" href="{{ url('/mitra') }}">
                     {{ config('app.name', 'Laravel Multi Auth Guard') }}: Jasa
                 </a>
             </div>
@@ -49,8 +49,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/jasa/login') }}">Login</a></li>
-                        <li><a href="{{ url('/jasa/register') }}">Register</a></li>
+                        <li><a href="{{ url('/mitra/login') }}">Login</a></li>
+                        <li><a href="{{ url('/mitra/register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -59,13 +59,13 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/jasa/logout') }}"
+                                    <a href="{{ url('/mitra/logout') }}"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
 
-                                    <form id="logout-form" action="{{ url('/jasa/logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ url('/mitra/logout') }}" method="POST" style="display: none;">
                                         {{ csrf_field() }}
                                     </form>
                                 </li>
