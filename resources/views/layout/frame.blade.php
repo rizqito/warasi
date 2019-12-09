@@ -82,16 +82,16 @@
                                 <div class="footer-contacts-widget fl-wrap">
                                     <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
                                     <ul  class="footer-contacts fl-wrap">
-                                        <li><span><i class="fa fa-envelope-o"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
-                                        <li> <span><i class="fa fa-map-marker"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
-                                        <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
+                                        <li><span><i class="fa fa-envelope-o"></i> EMail :</span><a href="#" target="_blank">cs@warasi.id</a></li>
+                                        <li> <span><i class="fa fa-map-marker"></i> Alamat :</span><a href="#" target="_blank">Jl. M. Yamin, No.1, Stmik Widya Cipta Dharma</a></li>
+                                        <li><span><i class="fa fa-phone"></i> Telepon :</span><a href="#">081234567890</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="footer-widget fl-wrap">
-                                <h3>Our Last News</h3>
+                                <h3>Berita Terkini</h3>
                                 <div class="widget-posts fl-wrap">
                                     <ul>
                                         <li class="clearfix">
@@ -135,10 +135,9 @@
                                 <div class="footer-widget fl-wrap">
                                     <div class="footer-menu fl-wrap">
                                         <ul>
-                                            <li><a href="#">Home </a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Listing</a></li>
-                                            <li><a href="#">Contacts</a></li>
+                                            <li><a href="{{ route('home') }}">Home </a></li>
+                                            <li><a href="{{ route('berita') }}">Berita</a></li>
+                                            <li><a href="{{ route('tentangKami') }}">Tentang Kami</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -155,7 +154,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="copyright"> &#169; CityBook 2018 .  All rights reserved.</div>
+                                <div class="copyright"> &#169; Netflix 2019.</div>
                             </div>
                             <div class="col-md-4">
                                 <div class="footer-social">

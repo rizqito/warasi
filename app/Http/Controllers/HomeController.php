@@ -25,4 +25,8 @@ class HomeController extends Controller
     public function beritaSingle(){
         return view('berita-single');
     }
+
+    public function login(){
+        return view('login-mitra');
+    }
 }

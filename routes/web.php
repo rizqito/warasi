@@ -16,6 +16,7 @@ Route::get('/berita', 'HomeController@berita')->name('berita');
 Route::get('/berita-single', 'HomeController@beritaSingle')->name('blogSingle');
 Route::get('/tentang-kami', 'HomeController@tentangKami')->name('tentangKami');
 Route::get('/list', 'HomeController@list')->name('list');
+Route::get('/login','HomeController@login')->name('login');
 
 Route::group(['prefix' => 'admin'], function () {
   Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
