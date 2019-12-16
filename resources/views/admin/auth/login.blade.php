@@ -1,68 +1,78 @@
-@extends('admin.layout.auth')
+<!doctype html>
+<html lang="en">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/admin/login') }}">
-                        {{ csrf_field() }}
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Bootstrap 4 admin template with Flat design pre-built apps and pages">
+<meta name="keywords" content="admin, admin theme, backend, bootstrap, bootstrap 4, bootstrap admin, clean, dashboard, modern, premium admin templates, responsive, sass">
+<meta name="author" content="thememakker.com">
+<link rel="icon" href="favicon.html" type="image/x-icon">
+<title>Login Admin Warasi</title>
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/themify-icons/themify-icons.css') }}">
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/fontawesome/css/font-awesome.min.css') }}">
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+<!-- Theme CSS -->
+<link rel="stylesheet" href="{{ asset('template/admin/assets/css/main.css') }}" type="text/css">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" autofocus>
+<!-- Demo CSS - No need to use these in your project -->
+<link rel="stylesheet" href="{{ asset('template/admin/assets/css/demo.css') }}">
+</head>
+<body class="theme-blue auth-page">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="m-t-30"><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" width="48" height="48" alt="ArrOwlite"></div>
+        <p>Please wait...</p>
+    </div>
+</div>
 
+<div class="vh100 d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="card mb-0">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-5">
+                            <a href="../index-2.html" title="Back" class="btn btn-nobg btn-nob"><i class="fa fa-arrow-left"></i></a>
+                            <a href="sign-up.html" title="Back" class="btn btn-nobg btn-nob">Sign Up</a>
+                        </div>                        
+                        <span class="clearfix"></span>
+                        <img src="../assets/images/brand/icon.svg" alt="" style="width: 50px;">
+                        <h4 class="heading h3 pt-3 pb-5">Welcome back,<br> login to your account.</h4>
+                        <form class="form-primary" method="post" action="{{ url('/admin/login') }}">
+                            {{ csrf_field() }}
+                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <input type="email" class="form-control" id="input_email" placeholder="Your email" value="{{ old('email') }}" name="email">
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
                             </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
-
+                            <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                                <input type="password" class="form-control" id="input_password" placeholder="Password" name="password">
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ url('/admin/password/reset') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                            <div class="text-right mt-4"><a href="{{ url('/admin/password/reset') }}" class="text-muted">Forgot password?</a></div>
+                            <button type="submit" class="btn btn-block btn-lg mt-4">Masuk <i class="fa fa-sign-in ml-2"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
+
+<!-- Core -->
+<script src="{{ asset('template/admin/assets/bundles/libscripts.bundle.js') }}"></script>
+<script src="{{ asset('template/admin/assets/bundles/vendorscripts.bundle.js') }}"></script>
+
+<!-- Theme JS -->
+<script src="{{ asset('template/admin/assets/js/theme.js') }}"></script>
+</body>
+</html>
