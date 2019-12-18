@@ -23,5 +23,13 @@ Route::post('/teknisi/store', 'AdminAuth\TeknisiController@store')->name('teknis
 Route::get('/teknisi/{id}/edit', 'AdminAuth\TeknisiController@edit')->name('teknisi.edit');
 Route::patch('/teknisi/{id}/update', 'AdminAuth\TeknisiController@update')->name('teknisi.update');
 Route::delete('/teknisi/{id}/destroy','AdminAuth\TeknisiController@destroy')->name('teknisi.destroy');
+
+Route::get('/berita', 'AdminAuth\BeritaController@index')->name('berita');
+Route::get('/berita/create', 'AdminAuth\BeritaController@create')->name('berita.create');
+Route::post('/berita/store', 'AdminAuth\BeritaController@store')->name('berita.store');
+Route::get('/berita/{id}/edit', 'AdminAuth\BeritaController@edit')->name('berita.edit');
+Route::patch('/berita/{id}/update', 'AdminAuth\BeritaController@update')->name('berita.update');
+Route::delete('/berita/{id}/destroy','AdminAuth\BeritaController@destroy')->name('berita.destroy');
+
 // Route::get('/dosen/laporan', 'AdminAuth\KategoriJasaController@laporan')->name('dosen.laporan');
 // Route::get('/dosen/{nidn}/detail', 'AdminAuth\KategoriJasaController@detail')->name('dosen.detail');

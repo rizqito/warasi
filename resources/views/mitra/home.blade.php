@@ -7,19 +7,21 @@
         <div class="profile-edit-header fl-wrap" style="margin-top:30px">
             <h4>Hallo , <span>{{ Auth::user()->name }}</span></h4>
         </div>
-        <div class="notification success fl-wrap">
+        <!-- <div class="notification success fl-wrap">
             <p>Your listing <a href="#">Fitness Center Brooklyn</a> has been approved!</p>
             <a class="notification-close" href="#"><i class="fa fa-times"></i></a>
-        </div>                                            
+        </div>                                             -->
               <!-- statistic-container--> 
         <div class="statistic-container fl-wrap">
         <!-- statistic-item-wrap--> 
-            <div class="statistic-item-wrap"> 
+            <div class="statistic-item-wrap">
+            <a href="">
             <div class="statistic-item gradient-bg fl-wrap">
-                <i class="fa fa-map-marker"></i>
+                <i class="fa fa-list"></i>
                 <div class="statistic-item-numder">21</div>
-                <h5>Active Listings</h5>
+                <h5>Kategori Servis</h5>
             </div>
+            </a> 
             </div>
         <!-- statistic-item-wrap end-->                                            
         <!-- statistic-item-wrap--> 
@@ -27,7 +29,7 @@
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa fa-eye"></i>
                 <div class="statistic-item-numder">1054</div>
-                <h5>Listing Views</h5>
+                <h5>Tampilan</h5>
             </div>
             </div>
         <!-- statistic-item-wrap end-->                                             
@@ -36,7 +38,7 @@
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa-comments-o"></i>
                 <div class="statistic-item-numder">675</div>
-                <h5>Total Reviews</h5>
+                <h5>Total Ulasan</h5>
             </div>
             </div>
         <!-- statistic-item-wrap end-->                                            
@@ -45,7 +47,7 @@
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa-heart-o"></i>
                 <div class="statistic-item-numder">154</div>
-                <h5>Times Bookmarked</h5>
+                <h5>Telah Ditandai</h5>
             </div>
             </div>
         <!-- statistic-item-wrap end-->  
@@ -56,7 +58,7 @@
     
     <div class="dashboard-list-box fl-wrap activities">
         <div class="dashboard-header fl-wrap">
-            <h3>Recent Activities</h3>
+            <h3>Aktivitas Terbaru</h3>
         </div>
         <!-- dashboard-list end-->    
         <div class="dashboard-list">

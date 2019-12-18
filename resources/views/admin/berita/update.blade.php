@@ -16,7 +16,7 @@ create data<br>
 	<tr>
 		<td>deskripsi</td>
 		<td>:</td>
-		<td><textarea name="deskripsi"></textarea></td>
+		<td><textarea name="deskripsi">{{$berita->deskripsi}}</textarea></td>
 	</tr>
 	<tr>
 		<td colspan="3"><button type="submit">Simpan</button><button type="reset">Batal</button></td>

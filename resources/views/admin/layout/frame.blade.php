@@ -73,11 +73,10 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <h6 class="dropdown-header">User menu</h6>
                     <a class="dropdown-item" href="page-profile.html"><i class="fa fa-user text-primary"></i>My Profile</a>
-                    <a class="dropdown-item" href="javascript:void(0);"><span class="float-right badge badge-success">$50K</span><i class="fa fa-briefcase text-primary"></i>My Balance</a>
-                    <a class="dropdown-item" href="app-inbox.html"><span class="float-right badge badge-warning">4</span><i class="fa fa-envelope text-primary"></i>Inbox</a>
                     <a class="dropdown-item" href="javascript:void(0);"><i class="fa fa-cog text-primary"></i>Settings</a>
                     <div class="dropdown-divider" role="presentation"></div>
-                    <a class="dropdown-item" href="pages/sign-in.html"><i class="fa fa-sign-out-alt text-primary"></i>Sign out</a>
+                    <a class="dropdown-item" href="{{ url('/admin/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-sign-out-alt text-primary"></i>Logout</a>
+                    <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
                 </div>
             </li>
             <li class="nav-item"><a class="nav-link nav-link-icon menu_toggle" href="javascript:void(0);"><i class="fa fa-align-left"></i></a></li>
