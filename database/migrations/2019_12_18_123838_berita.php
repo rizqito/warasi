@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Teknisi extends Migration
+class Berita extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class Teknisi extends Migration
      */
     public function up()
     {
-        Schema::create('teknisi', function (Blueprint $table) {
+        Schema::create('berita', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_jasa_service')->index()->unsigned();
-            $table->string('nama');
-            $table->string('no_telp',15);
+            $table->string('judul',35);
+            $table->string('foto');
+            $table->text('deskripsi');
             $table->timestamps();
-            $table->foreign('id_jasa_service')->references('id')->on('mitras')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -30,6 +29,6 @@ class Teknisi extends Migration
      */
     public function down()
     {
-        Schema::drop('teknisi');
+        Schema::drop('berita');
     }
 }
