@@ -17,6 +17,8 @@ Route::get('/kategori-jasa/{id}/edit', 'AdminAuth\KategoriJasaController@edit')-
 Route::patch('/kategori-jasa/{id}/update', 'AdminAuth\KategoriJasaController@update')->name('kategoriJasa.update');
 Route::delete('/kategori-jasa/{id}/destroy','AdminAuth\KategoriJasaController@destroy')->name('kategoriJasa.destroy');
 
+Route::get('/mitra', 'AdminAuth\MitraController@index')->name('mitra');
+
 Route::get('/teknisi', 'AdminAuth\TeknisiController@index')->name('teknisi');
 Route::get('/teknisi/create', 'AdminAuth\TeknisiController@create')->name('teknisi.create');
 Route::post('/teknisi/store', 'AdminAuth\TeknisiController@store')->name('teknisi.store');

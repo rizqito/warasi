@@ -12,7 +12,9 @@
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/fontawesome/css/font-awesome.min.cs') }}s">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/charts-c3/plugin.css') }}"/>
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jvectormap/jquery-jvectormap-2.0.3.css') }}"/>
-
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/css/main.css') }}" type="text/css">
 </head>
 
@@ -104,6 +106,17 @@
 <script src="{{ asset('template/admin/assets/js/theme.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/index.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/todo-js.js') }}"></script>
-</body>
 
+<script src="{{ asset('template/admin/assets/bundles/datatablescripts.bundle.js') }}"></script>
+
+<script src="{{ asset('template/admin/assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/jquery-datatable/buttons/buttons.html5.min.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/jquery-datatable/buttons/buttons.print.min.js') }}"></script>
+
+<!-- Theme JS -->
+<script src="{{ asset('template/admin/assets/js/theme.js') }}"></script>
+<script src="{{ asset('template/admin/assets/js/pages/jquery-datatable.js') }}"></script>
+</body>
 </html>

@@ -19,9 +19,9 @@
                 <div class="body d-flex justify-content-between">
                     <div>
                         <h5>2,365</h5>
-                        <span><i class="fa fa-eye"></i> Post View</span>
+                        <span><i class="fa fa-users"></i> Mitra</span>
                     </div>
-                    <span class="sparkbar-small">10,8,9,3,5,8,5</span>
+                    <span class="sparkbar-small">10,9,8,7,6,5,4</span>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
                 <div class="body d-flex justify-content-between">
                     <div>                                
                         <h5>365</h5>
-                        <span><i class="fa fa-thumbs-up"></i> Likes</span>
+                        <span><i class="fa fa-users"></i> Pelanggan</span>
                     </div>
                     <span class="sparkbar-small">8,5,2,2,1,6,4,8</span>
                 </div>
@@ -41,7 +41,7 @@
                 <div class="body d-flex justify-content-between">
                     <div>
                         <h5>65</h5>
-                        <span><i class="fa fa-comment"></i> Comments</span>
+                        <span><i class="fa fa-list"></i> Kategori</span>
                     </div>
                     <span class="sparkbar-small">10,8,9,3,5,8,5</span>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="body d-flex justify-content-between">
                     <div>                            
                         <h5>2,055</h5>
-                        <span><i class="fa fa-user"></i> Profile Views</span>
+                        <span><i class="fa fa-users"></i> Teknisi</span>
                     </div>
                     <span class="sparkbar-small">6,3,8,5,1,2,4,9</span>
                 </div>
@@ -64,7 +64,7 @@
         <div class="col-xl-12 col-lg-12 col-md-12">
             <div class="card">
                 <div class="header">
-                    <h2>Activities</h2>
+                    <h2>Aktivitas</h2>
                     <ul class="header-dropdown">
                         <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
                             <ul class="dropdown-menu dropdown-menu-right slideUp">

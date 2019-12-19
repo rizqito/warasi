@@ -15,23 +15,13 @@
             <li class="g_heading">-- Main</li>
             <li class="active"><a href="index-2.html"><i class="ti-home"></i><span>Dashboard</span></a></li>
             
-            <li class="g_heading">-- Application</li>
-            <li><a href="app-calendar.html"><i class="ti-calendar"></i><span>Calendar</span></a></li>
-            <li><a href="app-inbox.html"><i class="fa fa-inbox"></i><span>My Inbox</span></a></li>                
-            <li><a href="app-chat.html"><i class="ti-comments"></i><span>Chat Apps</span></a></li>
-            <li><a href="app-contact.html"><i class="ti-id-badge"></i><span>Contact</span></a></li>
-            <li><a href="app-taskboard.html"><i class="ti-notepad"></i>TaskBoard</a></li>
-            <li><a href="app-todo.html"><i class="fa fa-list-ul"></i><span>Todo List</span></a></li>
-            <li><a href="app-drive.html"><i class="fa fa-cloud"></i><span>My Drive</span></a></li>
-            <li class="g_heading">-- Extra</li>
-            <li><a href="app-widget.html"><i class="ti-widget"></i><span>Widgets</span></a></li>
-            <li><a href="page-timeline.html"><i class="ti-menu-alt"></i><span>Timeline</span></a></li>
-            <li><a href="page-gallery.html"><i class="fa fa-image"></i><span>Image Gallery</span></a></li>
-            <li><a href="page-invoices.html"><i class="ti-file"></i><span>Invoices</span></a></li>
-            <li><a href="page-faqs.html"><i class="fa fa-info-circle"></i><span>FAQs</span></a></li>
-            <li><a href="page-jvectormap.html"><i class="fa fa-map-o"></i><span>JVector Maps</span></a></li>
-            <li><a href="https://thememakker.com/templates/arrowlite/documentation/introduction.html"><i class="ti-file"></i>Documentation</a></li>
-            <li><a href="ui-elements.html"><i class="fa fa-heart"></i>UI Kit Elements</a></li>
+            <li class="g_heading">-- Jasa Service</li>
+            <li><a href="{{ route('admin.mitra') }}"><i class="fa fa-users"></i><span>Mitra</span></a></li>
+            <li><a href="app-inbox.html"><i class="fa fa-users"></i><span>Pelanggan</span></a></li>                
+            <li><a href="app-chat.html"><i class="fa fa-users"></i><span>Teknisi</span></a></li>
+            <li class="g_heading">-- Master</li>
+            <li><a href="app-widget.html"><i class="ti-menu-alt"></i><span>Berita</span></a></li>
+            <li><a href="page-timeline.html"><i class="ti-menu-alt"></i><span>Kategori Jasa</span></a></li>
         </ul>            
     </nav>
 </div>
