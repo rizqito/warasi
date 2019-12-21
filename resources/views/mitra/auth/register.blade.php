@@ -40,12 +40,12 @@
 
                     <div class="wrap-input100 validate-input m-b-23 {{ $errors->has('name') ? ' has-error' : '' }}" data-validate = "nama is required">
 						<span class="label-input100">Nama</span>
-						<input class="input100" type="text" name="name" placeholder="Nama Pengguna" value="{{ old('name') }}" autofocus>
+						<input class="input100" type="text" name="nama" placeholder="Nama Pengguna" value="{{ old('nama') }}" autofocus>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
-                    @if ($errors->has('name'))
+                    @if ($errors->has('nama'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                            <strong>{{ $errors->first('nama') }}</strong>
                         </span>
                     @endif
 

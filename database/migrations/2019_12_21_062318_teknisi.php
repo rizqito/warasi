@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMitrasTable extends Migration
+class Teknisi extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +13,12 @@ class CreateMitrasTable extends Migration
      */
     public function up()
     {
-        Schema::create('mitras', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nama');
-            $table->string('email')->unique();
+        Schema::create('teknisi', function (Blueprint $table) {
+            $table->integer('id_jasa_service')->index()->unsigned();
+            $table->string('nama',50);
             $table->string('no_telp',15);
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
+            $table->foreign('id_jasa_service')->references('id')->on('jasa_service')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -30,6 +29,6 @@ class CreateMitrasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('mitras');
+        Schema::drop('teknisi');
     }
 }
