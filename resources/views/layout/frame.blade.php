@@ -47,7 +47,7 @@
                         </div>
                         <button class="header-search-button" onclick="window.location.href='listing.html'">Search</button>
                     </div>
-                    <a class="add-list modal-open">Login <span><i class="fa fa-sign-in"></i></span></a>
+                    <a href="#" class="add-list modal-open">Login <span><i class="fa fa-sign-in"></i></span></a>
                     <!-- nav-button-wrap-->
                     <div class="nav-button-wrap color-bg">
                         <div class="nav-button">

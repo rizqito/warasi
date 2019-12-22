@@ -38,7 +38,7 @@
 						Daftar Akun
 					</span>
 
-                    <div class="wrap-input100 validate-input m-b-23 {{ $errors->has('name') ? ' has-error' : '' }}" data-validate = "nama is required">
+                    <div class="wrap-input100 validate-input m-b-23 {{ $errors->has('nama') ? ' has-error' : '' }}" data-validate = "nama is required">
 						<span class="label-input100">Nama</span>
 						<input class="input100" type="text" name="nama" placeholder="Nama Pengguna" value="{{ old('nama') }}" autofocus>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
@@ -101,26 +101,6 @@
 							</button>
 						</div>
 					</div>
-
-					<!-- <div class="txt1 text-center p-t-54 p-b-20">
-						<span>
-							Or Sign Up Using
-						</span>
-					</div>
-
-					<div class="flex-c-m">
-						<a href="#" class="login100-social-item bg1">
-							<i class="fa fa-facebook"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg2">
-							<i class="fa fa-twitter"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg3">
-							<i class="fa fa-google"></i>
-						</a>
-					</div> -->
 
 					<div class="flex-col-c p-t-30">
 						<span class="txt1 p-b-17">

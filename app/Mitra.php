@@ -16,7 +16,7 @@ class Mitra extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'no_telp', 'alamat', 'foto', 'deskripsi', 'password',
+        'nama', 'email', 'no_telp', 'foto', 'password',
     ];
 
     /**

@@ -6,7 +6,7 @@
         <div class="header-user-menu">
             <div class="header-user-name">
                 <span><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""></span>
-                Hallo , {{ Auth::user()->name }}
+                Hallo , {{ Auth::user()->nama }}
             </div>
             <ul>
                 <li><a href="{{route('mitra.profil')}}"> Ubah Profil</a></li>

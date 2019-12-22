@@ -17,6 +17,7 @@ class CreateMitrasTable extends Migration
             $table->string('nama');
             $table->string('email')->unique();
             $table->string('no_telp',15);
+            $table->string('foto',100)->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

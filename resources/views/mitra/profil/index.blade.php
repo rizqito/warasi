@@ -9,15 +9,11 @@
         </div>
         <div class="custom-form">
             <label>Nama Pengguna <i class="fa fa-user-o"></i></label>
-            <input type="text" value="{{Auth::user()->name}}"/>
+            <input type="text" value="{{Auth::user()->nama}}"/>
             <label>Alamat Email<i class="fa fa-envelope-o"></i>  </label>
             <input type="text" value="{{Auth::user()->email}}"/>
             <label>Telepon<i class="fa fa-phone"></i>  </label>
             <input type="text" value="{{Auth::user()->no_telp}}"/>
-            <label>Alamat <i class="fa fa-map-marker"></i>  </label>
-            <input type="text" value="{{Auth::user()->alamat}}"/>
-            <label>Deskripsi</label>                                              
-            <textarea cols="40" rows="3">{{Auth::user()->deskripsi}}</textarea>
             <button class="btn  big-btn  color-bg flat-btn">Simpan Perubahan<i class="fa fa-angle-right"></i></button>
         </div>
     </div>

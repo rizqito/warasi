@@ -5,7 +5,7 @@
     <!-- profile-edit-container--> 
     <div class="profile-edit-container">
         <div class="profile-edit-header fl-wrap" style="margin-top:30px">
-            <h4>Hallo , <span>{{ Auth::user()->name }}</span></h4>
+            <h4>Hallo , <span>{{ Auth::user()->nama }}</span></h4>
         </div>
         <!-- <div class="notification success fl-wrap">
             <p>Your listing <a href="#">Fitness Center Brooklyn</a> has been approved!</p>

@@ -49,7 +49,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'nama' => 'required|max:255',
             'email' => 'required|email|max:255|unique:mitras',
             'no_telp' => 'required|max:15',
             'password' => 'required|min:6|confirmed',
@@ -65,7 +65,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return Mitra::create([
-            'name' => $data['name'],
+            'nama' => $data['nama'],
             'email' => $data['email'],
             'no_telp' => $data['no_telp'],
             'password' => bcrypt($data['password']),
