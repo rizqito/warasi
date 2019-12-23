@@ -13,4 +13,7 @@ class JasaServiceController extends Controller
     	$jasaService=JasaService::where('id_mitra',Auth::user()->id)->get();
         return view('mitra.jasaService.index',compact('jasaService'));
     }
+    public function create(){    	
+        return view('mitra.jasaService.create');
+    }
 }

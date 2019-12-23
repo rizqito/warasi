@@ -39,18 +39,7 @@
                         <div class="container">
                             <!-- profile-edit-wrap -->
                             <div class="profile-edit-wrap">
-                                <div class="profile-edit-page-header">
-                                    <h2>Admin Panel</h2>
-                                    <div class="breadcrumbs"><a href="#">Home</a><span>Dasboard</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="fixed-bar fl-wrap">
-                                            @include('mitra.layout.left-sidebar')
-                                        </div>
-                                    </div>
-                                    @yield('content')
-                                </div>
+                                @yield('content')                        
                             </div>
                             <!--profile-edit-wrap end -->
                         </div>

@@ -12,11 +12,11 @@ Route::get('/home', function () {
 
 Route::get('/', function () {return view('mitra.home');})->name('home');
 Route::get('/servicemu', 'MitraAuth\JasaServiceController@index')->name('service');
-// Route::get('/berita/create', 'AdminAuth\BeritaController@create')->name('berita.create');
+Route::get('/servicemu/create', 'MitraAuth\JasaServiceController@create')->name('service.create');
 // Route::post('/berita/store', 'AdminAuth\BeritaController@store')->name('berita.store');
 // Route::get('/berita/{id}/edit', 'AdminAuth\BeritaController@edit')->name('berita.edit');
 // Route::patch('/berita/{id}/update', 'AdminAuth\BeritaController@update')->name('berita.update');
 // Route::delete('/berita/{id}/destroy','AdminAuth\BeritaController@destroy')->name('berita.destroy');
 
 Route::get('/profil', 'MitraAuth\ProfilController@index')->name('profil');
-Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');
+Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');		

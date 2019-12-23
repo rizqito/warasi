@@ -2,8 +2,14 @@
     <!-- user-profile-menu-->
     <div class="user-profile-menu">
         <ul>
-            <li><a href="{{ route('mitra.home') }}" class="user-profile-act"><i class="fa fa-gears"></i>Dashboard</a></li>
-            <li><a href="{{ route('mitra.service') }}"><i class="fa fa-th-list"></i> Jasa Servicemu</a></li>
+            <li><a href="{{ route('mitra.home') }}" class="
+                @if(request()->is('mitra') || request()->is('mitra/home')) user-profile-act @endif
+            "><i class="fa fa-gears"></i>Dashboard</a></li>
+            <li><a href="{{ route('mitra.service') }}" class="
+                @if(request()->is('mitra/servicemu') || request()->is('mitra/servicemu/create')) user-profile-act @endif
+            "><i class="fa fa-th-list"></i> Jasa Servicemu</a></li>
+            <li><a href=""><i class="fa fa-image"></i> Galeri Jasa Servicemu</a></li>
+            <li><a href=""><i class="fa fa-list"></i> Jam Operasional</a></li>
         </ul>
     </div>
     <!-- user-profile-menu end-->
