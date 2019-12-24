@@ -15,9 +15,10 @@ class KategoriJasa extends Migration
     {
         Schema::create('kategori_jasa', function (Blueprint $table) {
             $table->integer('id_jasa_service')->index()->unsigned();
-            $table->string('kategori',50);
+            $table->integer('id_kategori')->index()->unsigned();
             $table->timestamps();
             $table->foreign('id_jasa_service')->references('id')->on('jasa_service')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('id_kategori')->references('id')->on('kategori')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

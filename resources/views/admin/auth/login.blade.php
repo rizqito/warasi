@@ -38,12 +38,12 @@
                             <a href="sign-up.html" title="Back" class="btn btn-nobg btn-nob">Sign Up</a>
                         </div>                        
                         <span class="clearfix"></span>
-                        <img src="../assets/images/brand/icon.svg" alt="" style="width: 50px;">
-                        <h4 class="heading h3 pt-3 pb-5">Welcome back,<br> login to your account.</h4>
+                        <img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" alt="" style="width: 50px;">
+                        <h4 class="heading h3 pt-3 pb-5">Selamat Datang Kembali,<br> Halaman Login Admin.</h4>
                         <form class="form-primary" method="post" action="{{ url('/admin/login') }}">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <input type="email" class="form-control" id="input_email" placeholder="Your email" value="{{ old('email') }}" name="email">
+                                <input type="email" class="form-control" id="input_email" placeholder="Email Pengguna" value="{{ old('email') }}" name="email">
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -51,15 +51,15 @@
                                 @endif
                             </div>
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                <input type="password" class="form-control" id="input_password" placeholder="Password" name="password">
+                                <input type="password" class="form-control" id="input_password" placeholder="Kata Sandi" name="password">
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
                             </div>
-                            <div class="text-right mt-4"><a href="{{ url('/admin/password/reset') }}" class="text-muted">Forgot password?</a></div>
-                            <button type="submit" class="btn btn-block btn-lg mt-4">Masuk <i class="fa fa-sign-in ml-2"></i></button>
+                            <div class="text-right mt-4"><a href="{{ url('/admin/password/reset') }}" class="text-muted">Lupa Password?</a></div>
+                            <button type="submit" class="btn btn-block btn-primary btn-lg mt-4">Masuk <i class="fa fa-sign-in ml-2"></i></button>
                         </form>
                     </div>
                 </div>

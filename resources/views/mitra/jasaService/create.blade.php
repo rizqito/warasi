@@ -46,15 +46,15 @@
                 <!-- Checkboxes -->
                 <div class=" fl-wrap filter-tags">
                     <h4>Kategori Jasa </h4>
-                    <input id="check-a" type="checkbox" name="check">
+                    <input id="check-a" type="checkbox" name="kategori[]" value="TV, LCD, Proyektor">
                     <label for="check-a">TV, LCD, Proyektor</label>
-                    <input id="check-b" type="checkbox" name="check">
+                    <input id="check-b" type="checkbox" name="kategori[]" value="Kulkas, Frezzer">
                     <label for="check-b">Kulkas, Frezzer</label>
-                    <input id="check-c" type="checkbox" name="check">
+                    <input id="check-c" type="checkbox" name="kategori[]" value="">
                     <label for="check-c">Mesin Cuci</label>
-                    <input id="check-d" type="checkbox" name="check">
+                    <input id="check-d" type="checkbox" name="kategori[]" value="">
                     <label for="check-d">Komputer, Laptop, Notebook, Printer</label>
-                    <input id="check-d" type="checkbox" name="check">
+                    <input id="check-d" type="checkbox" name="kategori[]" value="">
                     <label for="check-d">Handphone, Gadget, Tab</label>
                 </div>
                 <button class="btn  big-btn  color-bg flat-btn">Simpan<i class="fa fa-angle-right"></i></button>

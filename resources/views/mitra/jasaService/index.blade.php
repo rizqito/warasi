@@ -12,10 +12,12 @@
         </div>
     </div>
     <div class="col-md-9">
+        @if(count($jasaService)!=0)
         <div class="notification success fl-wrap">
             <p>Kamu Belum Menawarkan Jasa Mu. Ayo <a href="#">publikasikan</a> sekarang.</p>
             <a class="notification-close" href="#"><i class="fa fa-times"></i></a>
         </div>
+        @endif
         <div class="dashboard-list-box fl-wrap">
             <div class="dashboard-header fl-wrap">
                 <h3>Jasa Service Kamu</h3>

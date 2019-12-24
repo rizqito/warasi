@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     {
         $faker = Factory::create();
         Admin::create([
-            'name'=>$faker->name,
+            'nama'=>$faker->name,
             'email'=>'admin@admin.com',
             'password'=>bcrypt('admin'),
         ]);
