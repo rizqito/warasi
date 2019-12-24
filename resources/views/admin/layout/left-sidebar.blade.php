@@ -13,7 +13,7 @@
     <nav class="sidebar main_dashboard open">
         <ul class="metismenu">
             <li class="g_heading">-- Main</li>
-            <li class="active"><a href="index-2.html"><i class="ti-home"></i><span>Dashboard</span></a></li>
+            <li class="@if(request()->is('admin') || request()->is('admin/home')) active @endif"><a href="{{route('admin.home')}}"><i class="ti-home"></i><span>Dashboard</span></a></li>
             
             <li class="g_heading">-- Jasa Service</li>
             <li><a href="{{ route('admin.mitra') }}"><i class="fa fa-users"></i><span>Mitra</span></a></li>
@@ -21,7 +21,9 @@
             <li><a href="app-chat.html"><i class="fa fa-users"></i><span>Teknisi</span></a></li>
             <li class="g_heading">-- Master</li>
             <li><a href="app-widget.html"><i class="ti-menu-alt"></i><span>Berita</span></a></li>
-            <li><a href="page-timeline.html"><i class="ti-menu-alt"></i><span>Kategori Jasa</span></a></li>
+            <li class="
+                @if(request()->is('admin/kategori-jasa') || request()->is('admin/kategori-jasa/create')) active @endif
+            "><a href="{{route('admin.kategoriJasa')}}"><i class="ti-menu-alt"></i><span>Kategori Jasa</span></a></li>
         </ul>            
     </nav>
 </div>

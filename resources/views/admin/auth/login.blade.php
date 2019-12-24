@@ -33,13 +33,9 @@
             <div class="col-lg-4">
                 <div class="card mb-0">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between mb-5">
-                            <a href="../index-2.html" title="Back" class="btn btn-nobg btn-nob"><i class="fa fa-arrow-left"></i></a>
-                            <a href="sign-up.html" title="Back" class="btn btn-nobg btn-nob">Sign Up</a>
-                        </div>                        
                         <span class="clearfix"></span>
-                        <img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" alt="" style="width: 50px;">
-                        <h4 class="heading h3 pt-3 pb-5">Selamat Datang Kembali,<br> Halaman Login Admin.</h4>
+                        <center><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" alt="" style="width: 50px;"></center>
+                        <h4 class="heading h3 pt-3 pb-5">Selamat Datang Kembali,<br> di Halaman Login Admin.</h4>
                         <form class="form-primary" method="post" action="{{ url('/admin/login') }}">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">

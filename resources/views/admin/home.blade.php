@@ -21,7 +21,6 @@
                         <h5>2,365</h5>
                         <span><i class="fa fa-users"></i> Mitra</span>
                     </div>
-                    <span class="sparkbar-small">10,9,8,7,6,5,4</span>
                 </div>
             </div>
         </div>
@@ -32,7 +31,6 @@
                         <h5>365</h5>
                         <span><i class="fa fa-users"></i> Pelanggan</span>
                     </div>
-                    <span class="sparkbar-small">8,5,2,2,1,6,4,8</span>
                 </div>
             </div>
         </div>
@@ -43,7 +41,6 @@
                         <h5>65</h5>
                         <span><i class="fa fa-list"></i> Kategori</span>
                     </div>
-                    <span class="sparkbar-small">10,8,9,3,5,8,5</span>
                 </div>
             </div>
         </div>
@@ -54,14 +51,22 @@
                         <h5>2,055</h5>
                         <span><i class="fa fa-users"></i> Teknisi</span>
                     </div>
-                    <span class="sparkbar-small">6,3,8,5,1,2,4,9</span>
                 </div>
             </div>
         </div>
     </div>            
-    
     <div class="row clearfix">
         <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-8">
+                            <h2 class="heading h3 mb-0">Hello, {{Auth::user()->nama}}</h2>
+                        </div>
+                    </div>
+                    <p>Selamat datang di Halaman Admin Warasi.</p>
+                </div>
+            </div>
             <div class="card">
                 <div class="header">
                     <h2>Aktivitas</h2>

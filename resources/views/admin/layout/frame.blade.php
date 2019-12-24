@@ -7,7 +7,7 @@
 <meta name="keywords" content="admin, admin theme, backend, bootstrap, bootstrap 4, bootstrap admin, clean, dashboard, modern, premium admin templates, responsive, sass">
 <meta name="author" content="thememakker.com">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<title>:: ArrOwlite :: Home</title>
+<title>Admin Panel Warasi</title>
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/themify-icons/themify-icons.cs') }}s">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/fontawesome/css/font-awesome.min.cs') }}s">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/charts-c3/plugin.css') }}"/>
@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/css/main.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/parsleyjs/css/parsley.css') }}">
 </head>
 
 <body class="theme-blue">
@@ -103,7 +104,6 @@
 <script src="{{ asset('template/admin/assets/bundles/jvectormap.bundle.js') }}"></script>
 
 <!-- Theme JS -->
-<script src="{{ asset('template/admin/assets/js/theme.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/index.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/todo-js.js') }}"></script>
 
@@ -118,5 +118,7 @@
 <!-- Theme JS -->
 <script src="{{ asset('template/admin/assets/js/theme.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/jquery-datatable.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/parsleyjs/js/parsley.min.js') }}"></script>
+<script src="{{ asset('template/admin/assets/js/pages/form-validation.js') }}"></script>
 </body>
 </html>

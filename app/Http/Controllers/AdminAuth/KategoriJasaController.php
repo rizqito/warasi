@@ -21,10 +21,9 @@ class KategoriJasaController extends Controller
 
 	public function store(Request $request){    	
         KategoriJasa::create([
-            'id_mitra' => request('id_mitra'),
             'kategori' => request('kategori')
         ]);
-        return redirect()->route('admin.kategoriJasa')->with('success','Berhasil Simpan Data Kategori Jasa.');
+        return redirect()->route('admin.kategoriJasa')->with('success','Berhasil Tambah Kategori Jasa.');
     }
 
     public function edit($id){
