@@ -17,10 +17,16 @@ class BeritaController extends Controller
         return view('admin.berita.create');
 	}
 
-	public function store(Request $request){    	
+	public function store(Request $request){
+        if (request('foto')=='') {
+            $file = '';
+        }else{
+            $file = request()->foto->getClientOriginalName();
+            $request->foto->storeAs('Berita',$file);        
+        }
         Berita::create([
             'judul' => request('judul'),
-            'foto' => '',
+            'foto' => $file,
             'deskripsi' => request('deskripsi')
         ]);
         return redirect()->route('admin.berita')->with('success','Berhasil Simpan Data berita.');
@@ -29,6 +35,11 @@ class BeritaController extends Controller
     public function edit($id){
     	$berita=Berita::find($id);
         return view('admin.berita.update',compact('berita'));
+    }
+
+    public function detail($id){
+    	$berita=Berita::find($id);
+        return view('admin.berita.detail',compact('berita'));
     }
 
     public function update(Request $request, $id){

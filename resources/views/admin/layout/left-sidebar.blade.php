@@ -1,5 +1,5 @@
 <div class="left_sidebar">
-    <a class="brand-text" href="javascript:void(0);">ArrOwlite</a>
+    <a class="brand-text" href="javascript:void(0);">Warasi Admin</a>
     <ul class="navbar-nav mr-auto xs-show d-none">
         <li class="nav-item xs-hide"><a class="nav-link nav-link-icon" href="search.html"><i class="fa fa-search"></i></a>
         </li>
@@ -20,9 +20,11 @@
             <li><a href="app-inbox.html"><i class="fa fa-users"></i><span>Pelanggan</span></a></li>                
             <li><a href="app-chat.html"><i class="fa fa-users"></i><span>Teknisi</span></a></li>
             <li class="g_heading">-- Master</li>
-            <li><a href="app-widget.html"><i class="ti-menu-alt"></i><span>Berita</span></a></li>
             <li class="
-                @if(request()->is('admin/kategori-jasa') || request()->is('admin/kategori-jasa/create')) active @endif
+                @if(request()->is('admin/berita') || request()->is('admin/berita/create') || request()->is('admin/berita/*/edit')) active @endif
+            "><a href="{{route('admin.berita')}}"><i class="ti-menu-alt"></i><span>Berita</span></a></li>
+            <li class="
+                @if(request()->is('admin/kategori-jasa') || request()->is('admin/kategori-jasa/create') || request()->is('admin/kategori-jasa/*/edit')) active @endif
             "><a href="{{route('admin.kategoriJasa')}}"><i class="ti-menu-alt"></i><span>Kategori Jasa</span></a></li>
         </ul>            
     </nav>

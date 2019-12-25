@@ -30,6 +30,7 @@ Route::get('/berita', 'AdminAuth\BeritaController@index')->name('berita');
 Route::get('/berita/create', 'AdminAuth\BeritaController@create')->name('berita.create');
 Route::post('/berita/store', 'AdminAuth\BeritaController@store')->name('berita.store');
 Route::get('/berita/{id}/edit', 'AdminAuth\BeritaController@edit')->name('berita.edit');
+Route::get('/berita/{id}/detail', 'AdminAuth\BeritaController@detail')->name('berita.detail');
 Route::patch('/berita/{id}/update', 'AdminAuth\BeritaController@update')->name('berita.update');
 Route::delete('/berita/{id}/destroy','AdminAuth\BeritaController@destroy')->name('berita.destroy');
 

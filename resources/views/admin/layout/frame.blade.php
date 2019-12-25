@@ -6,7 +6,7 @@
 <meta name="description" content="Bootstrap 4 admin template with Flat design pre-built apps and pages">
 <meta name="keywords" content="admin, admin theme, backend, bootstrap, bootstrap 4, bootstrap admin, clean, dashboard, modern, premium admin templates, responsive, sass">
 <meta name="author" content="thememakker.com">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ asset('template/admin/assets/images/brand/logo.png') }}" type="image/x-icon">
 <title>Admin Panel Warasi</title>
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/themify-icons/themify-icons.cs') }}s">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/fontawesome/css/font-awesome.min.cs') }}s">
@@ -17,20 +17,21 @@
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/css/main.css') }}" type="text/css">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/parsleyjs/css/parsley.css') }}">
+<link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/summernote/dist/summernote.min.css') }}"/>
 </head>
 
 <body class="theme-blue">
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" width="48" height="48" alt="ArrOwlite"></div>
-        <p>Please wait...</p>        
+        <div class="m-t-30"><img src="{{ asset('template/admin/assets/images/brand/logo.png') }}" width="48" height="48" alt="Warasi"></div>
+        <p>Mohon Tunggu...</p>        
     </div>
 </div>
 
 <nav class="navbar custom-navbar">
     <div class="nav_top">
-        <a class="navbar-brand" href="index-2.html"><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" alt="ArrOwlite" /></a>
+        <a class="navbar-brand" href="{{route('admin.home')}}"><img src="{{ asset('template/admin/assets/images/brand/logo.png') }}" alt="Warasi" /></a>
         <ul class="navbar-nav mr-auto d-none d-md-block">
             <li class="nav-item "><a class="nav-link nav-link-icon btn-dashboard active" href="javascript:void(0);"><i class="fa fa-dashboard"></i></a></li>
         </ul>
@@ -120,5 +121,6 @@
 <script src="{{ asset('template/admin/assets/js/pages/jquery-datatable.js') }}"></script>
 <script src="{{ asset('template/admin/assets/vendor/parsleyjs/js/parsley.min.js') }}"></script>
 <script src="{{ asset('template/admin/assets/js/pages/form-validation.js') }}"></script>
+<script src="{{ asset('template/admin/assets/vendor/summernote/dist/summernote.js') }}"></script>
 </body>
 </html>

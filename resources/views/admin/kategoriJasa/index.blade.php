@@ -17,6 +17,7 @@
         </div>
     </div>
     <div class="mb-3"></div>
+    @include('admin.layout.alert')
     <div class="row clearfix">
         <div class="col-lg-12">
             <div class="card">
@@ -25,37 +26,27 @@
                         <table class="table table-hover mb-0 c_list js-basic-example">
                             <thead>
                                 <tr>
-                                    <th></th>
-                                    <th>Nama</th>                                    
-                                    <th>Email</th>                                    
-                                    <th>Alamat</th>
+                                    <th>#</th>
+                                    <th>Kategori</th>
                                     <th></th>
                                 </tr>
                             </thead>
                                 <tbody>
-                                <tr>
-                                    <td style="width: 50px;">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cl1">
-                                            <label class="custom-control-label" for="cl1">&nbsp;</label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <img src="{{ asset('template/admin/assets/images/xs/avatar1.jpg') }}" class="rounded-circle avatar" alt="">
-                                        <span>John Smith</span>
-                                    </td>
-                                    <td>
-                                        <span class="phone"><i class="fa fa-phone"></i> 264-625-2583</span>
-                                    </td>                                   
-                                    <td>
-                                        <span><i class="fa fa-"></i>123 6th St. Melbourne, FL 32904</span>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-eye"></i></button>                                            
-                                        <button type="button" class="btn btn-info btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                    </td>
-                                </tr>
+                                    <?php $no=1;?>
+                                    @foreach($kategoriJasa as $kj)
+                                    <tr>
+                                        <td style="width: 50px;">{{$no}}</td>
+                                        <td>
+                                            <span class="phone"> {!! $kj->Kategori !!}</span>
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('admin.kategoriJasa.edit',$kj) }}" class="btn btn-info btn-sm" title="Edit"><i class="fa fa-edit"></i></a>
+                                            <button type="button" class="btn btn-danger btn-sm" title="Delete" data-toggle="modal" data-target="#del-{{$kj->id}}"><i class="fa fa-trash-o"></i></button>
+                                        </td>
+                                    </tr>
+                                    @include('admin.kategoriJasa.modal.delete')
+                                    <?php $no++;?>
+                                    @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Bootstrap 4 admin template with Flat design pre-built apps and pages">
-<meta name="keywords" content="admin, admin theme, backend, bootstrap, bootstrap 4, bootstrap admin, clean, dashboard, modern, premium admin templates, responsive, sass">
-<meta name="author" content="thememakker.com">
-<link rel="icon" href="favicon.html" type="image/x-icon">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link rel="icon" href="{{ asset('template/admin/assets/images/brand/logo.png') }}" type="image/x-icon">
 <title>Login Admin Warasi</title>
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/themify-icons/themify-icons.css') }}">
 <link rel="stylesheet" href="{{ asset('template/admin/assets/vendor/fontawesome/css/font-awesome.min.css') }}">
@@ -22,8 +22,8 @@
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" width="48" height="48" alt="ArrOwlite"></div>
-        <p>Please wait...</p>
+        <div class="m-t-30"><img src="{{ asset('template/admin/assets/images/brand/logo.png') }}" width="48" height="48" alt="ArrOwlite"></div>
+        <p>Mohon Tunggu...</p>
     </div>
 </div>
 
@@ -34,7 +34,7 @@
                 <div class="card mb-0">
                     <div class="card-body">
                         <span class="clearfix"></span>
-                        <center><img src="{{ asset('template/admin/assets/images/brand/icon.svg') }}" alt="" style="width: 50px;"></center>
+                        <center><img src="{{ asset('template/admin/assets/images/brand/logo.png') }}" alt="" style="width: 70px;"></center>
                         <h4 class="heading h3 pt-3 pb-5">Selamat Datang Kembali,<br> di Halaman Login Admin.</h4>
                         <form class="form-primary" method="post" action="{{ url('/admin/login') }}">
                             {{ csrf_field() }}
