@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\JasaService;
 use App\KategoriMitra;
+use App\Berita;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,8 @@ class HomeController extends Controller
     }
 
     public function berita(){
-    	return view('berita');
+        $berita=Berita::all()->paginate(3);
+    	return view('berita',compact('berita'));
     }
 
     public function tentangKami(){

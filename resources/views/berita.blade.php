@@ -10,13 +10,13 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="section-title center-align">
-                    <h2><span>Our News - Blog</span></h2>
-                    <div class="breadcrumbs fl-wrap"><a href="#">Home</a><span>Blog</span></div>
+                    <h2><span>Berita</span></h2>
+                    <div class="breadcrumbs fl-wrap"><a href="#">Home</a><span>Berita</span></div>
                     <span class="section-separator"></span>
                 </div>
             </div>
             <div class="header-sec-link">
-                <div class="container"><a href="#sec1" class="custom-scroll-link">Let's Start</a></div>
+                <div class="container"><a href="#sec1" class="custom-scroll-link">Mari Mulai</a></div>
             </div>
         </section>
         <!-- section end -->
@@ -26,159 +26,31 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="list-single-main-wrapper fl-wrap" id="sec2">
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-media fl-wrap">
-                                    <div class="single-slider-wrapper fl-wrap">
-                                        <div class="single-slider fl-wrap"  >
-                                            <div class="slick-slide-item"><img src="{{ asset('template/katalog/images/all/1.jpg') }}" alt=""></div>
-                                            <div class="slick-slide-item"><img src="{{ asset('template/katalog/images/all/9.jpg') }}" alt=""></div>
-                                            <div class="slick-slide-item"><img src="{{ asset('template/katalog/images/all/10.jpg') }}" alt=""></div>
-                                        </div>
-                                        <div class="swiper-button-prev sw-btn"><i class="fa fa-long-arrow-left"></i></div>
-                                        <div class="swiper-button-next sw-btn"><i class="fa fa-long-arrow-right"></i></div>
-                                    </div>
-                                </div>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
-                                    </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
-                                </div>
-                            </article>
-                            <!-- article end -->       
                             <span class="section-separator"></span>
+                            @foreach($berita as $b)
                             <!-- article> --> 
                             <article>
                                 <div class="list-single-main-media fl-wrap">
-                                    <a href="{{ route('blogSingle') }}"><img src="{{ asset('template/katalog/images/all/9.jpg') }}" alt=""></a>
+                                    <a href="{{ route('detail-berita') }}"><img src="{{ '../storage/Berita/'.$b->foto }}" alt=""></a>
                                 </div>
                                 <div class="list-single-main-item fl-wrap">
                                     <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
+                                        <h3><a href="{{ route('detail-berita') }}">{{$b->judul}}</a></h3>
                                     </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
+                                    <p>{!!$b->deskripsi!!}</p>
+                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Admin</span></a></div>
                                     <div class="post-opt">
                                         <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
+                                            <li><i class="fa fa-calendar-check-o"></i> <span>{{ $b->updated_at }}</span></li>
                                             <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
                                         </ul>
                                     </div>
                                     <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
+                                    <a href="{{ route('detail-berita') }}" class="btn transparent-btn float-btn">Selengkapnya<i class="fa fa-eye"></i></a>
                                 </div>
                             </article>
                             <!-- article end -->                               
-                            <span class="section-separator"></span>
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
-                                    </div>
-                                    <blockquote>
-                                        <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
-                                    </blockquote>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
-                                </div>
-                            </article>
-                            <!-- article end -->      
-                            <span class="section-separator"></span>
-                            <!-- article> --> 
-                            <article>
-                                <div class="list-single-main-media fl-wrap">
-                                    <a href="{{ route('blogSingle') }}"><img src="{{ asset('template/katalog/images/all/12.jpg') }}" alt=""></a>
-                                </div>
-                                <div class="list-single-main-item fl-wrap">
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3><a href="{{ route('blogSingle') }}">Aliquam erat volutpat. Curabitur convallis.</a></h3>
-                                    </div>
-                                    <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt...</p>
-                                    <div class="post-author"><a href="#"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""><span>By , Alisa Noory</span></a></div>
-                                    <div class="post-opt">
-                                        <ul>
-                                            <li><i class="fa fa-calendar-check-o"></i> <span>25 April 2018</span></li>
-                                            <li><i class="fa fa-eye"></i> <span>264</span></li>
-                                            <li><i class="fa fa-tags"></i> <a href="#">Photography</a> , <a href="#">Design</a> </li>
-                                        </ul>
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <div class="list-single-main-item-title fl-wrap">
-                                        <h3>Tags</h3>
-                                    </div>
-                                    <div class="list-single-tags tags-stylwrap blog-tags">
-                                        <a href="#">Event</a>
-                                        <a href="#">Conference</a>
-                                        <a href="#">Strategies</a>
-                                        <a href="#">Trends</a>
-                                        <a href="#">Schedule</a>
-                                        <a href="#">Speak</a>                                                                               
-                                    </div>
-                                    <span class="fw-separator"></span>
-                                    <a href="{{ route('blogSingle') }}" class="btn transparent-btn float-btn">Read more<i class="fa fa-eye"></i></a>
-                                </div>
-                            </article>
-                            <!-- article end -->                               
+                            @endforeach
                             <div class="pagination">
                                 <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
                                 <a href="#" class="current-page">1</a>
@@ -194,48 +66,7 @@
                             <!--box-widget-item -->
                             <div class="box-widget-item fl-wrap">
                                 <div class="box-widget-item-header">
-                                    <h3>Search In blog : </h3>
-                                </div>
-                                <div class="box-widget search-widget">
-                                    <form action="#" class="fl-wrap">
-                                        <input name="se" id="se" type="text" class="search" placeholder="Search.." value="Search..." />
-                                        <button class="search-submit" id="submit_btn"><i class="fa fa-search transition"></i> </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!--box-widget-item end -->  
-                            <!--box-widget-item -->
-                            <div class="box-widget-item fl-wrap">
-                                <div class="box-widget-item-header">
-                                    <h3>About Athor : </h3>
-                                </div>
-                                <div class="box-widget list-author-widget">
-                                    <div class="list-author-widget-header shapes-bg-small  color-bg fl-wrap">
-                                        <span class="list-author-widget-link"><a href="author-single.html">Alisa Noory</a></span>
-                                        <img src="images/avatar/4.jpg" alt=""> 
-                                    </div>
-                                    <div class="box-widget-content">
-                                        <div class="list-author-widget-text">
-                                            <div class="list-author-widget-contacts">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</p>
-                                            </div>
-                                            <div class="list-widget-social">
-                                                <ul>
-                                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                    <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-                                                    <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--box-widget-item end -->
-                            <!--box-widget-item -->
-                            <div class="box-widget-item fl-wrap">
-                                <div class="box-widget-item-header">
-                                    <h3>Popular posts : </h3>
+                                    <h3>Postingan Popular : </h3>
                                 </div>
                                 <div class="box-widget widget-posts blog-widgets">
                                     <div class="box-widget-content">
@@ -273,72 +104,6 @@
                                 </div>
                             </div>
                             <!--box-widget-item end -->     
-                            <!--box-widget-item -->
-                            <div class="box-widget-item fl-wrap">
-                                <div class="box-widget-item-header">
-                                    <h3>Tags: </h3>
-                                </div>
-                                <div class="list-single-tags tags-stylwrap">
-                                    <a href="#">Event</a>
-                                    <a href="#">Design</a>
-                                    <a href="#">Photography</a>
-                                    <a href="#">Trends</a>
-                                    <a href="#">Video</a>
-                                    <a href="#">News</a>                                                                               
-                                </div>
-                            </div>
-                            <!--box-widget-item end -->     
-                            <!--box-widget-item -->
-                            <div class="box-widget-item fl-wrap">
-                                <div class="box-widget-item-header">
-                                    <h3>Our Instagram : </h3>
-                                </div>
-                                <div class="box-widget">
-                                    <div class="box-widget-content">
-                                        <div class="jr-insta-thumb">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/1.jpg') }}" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/2.jpg') }}" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/3.jpg') }}" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/4.jpg') }}" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/5.jpg') }}" alt=""></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><img src="{{ asset('template/katalog/images/instagram/6.jpg') }}" alt=""></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a class="widget-posts-link" href="#" target="_blank">Follow us<span><i class="fa fa-angle-right"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--box-widget-item end -->                                       
-                            <!--box-widget-item -->
-                            <div class="box-widget-item fl-wrap">
-                                <div class="box-widget-item-header">
-                                    <h3>Categories : </h3>
-                                </div>
-                                <div class="box-widget">
-                                    <div class="box-widget-content">
-                                        <ul class="cat-item">
-                                            <li><a href="#">Standard</a> <span>(3)</span></li>
-                                            <li><a href="#">Video</a> <span>(6) </span></li>
-                                            <li><a href="#">Gallery</a> <span>(12) </span></li>
-                                            <li><a href="#">Quotes</a> <span>(4)</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--box-widget-item end -->                    
                         </div>
                     </div>
                     <!--box-widget-wrap end -->

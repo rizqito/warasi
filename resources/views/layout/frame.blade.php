@@ -31,22 +31,6 @@
                     <div class="logo-holder">
                         <a href="index-2.html"><img src="{{ asset('template/katalog/images/logo3.png') }}" alt=""></a>
                     </div>
-                    <div class="header-search vis-header-search">
-                        <div class="header-search-input-item">
-                            <input type="text" placeholder="Kata kunci" value=""/>
-                        </div>
-                        <div class="header-search-select-item">
-                            <select data-placeholder="All Categories" class="chosen-select" >
-                                <option>All Categories</option>
-                                <option>Shops</option>
-                                <option>Hotels</option>
-                                <option>Restaurants</option>
-                                <option>Fitness</option>
-                                <option>Events</option>
-                            </select>
-                        </div>
-                        <button class="header-search-button" onclick="window.location.href='listing.html'">Search</button>
-                    </div>
                     <a href="#" class="add-list modal-open">Login <span><i class="fa fa-sign-in"></i></span></a>
                     <!-- nav-button-wrap-->
                     <div class="nav-button-wrap color-bg">

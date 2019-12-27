@@ -37,10 +37,9 @@
         <section  id="sec2">
             <div class="container">
                 <div class="section-title">
-                    <h2> How We Work</h2>
-                    <div class="section-subtitle">popular questions</div>
+                    <h2> Siapa Netflix ?</h2>
+                    <div class="section-subtitle">Warasi</div>
                     <span class="section-separator"></span>
-                    <p>Explore some of the best tips from around the city from our partners and friends.</p>
                 </div>
                 <!--about-wrap -->
                 <div class="about-wrap">
@@ -65,39 +64,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- about-wrap end  -->
-                <span class="fw-separator"></span>
-                <!-- features-box-container -->
-                <div class="features-box-container fl-wrap row">
-                    <!--features-box -->
-                    <div class="features-box col-md-4">
-                        <div class="time-line-icon">
-                            <i class="fa fa-medkit"></i>
-                        </div>
-                        <h3>24 Hours Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
-                    </div>
-                    <!-- features-box end  -->
-                    <!--features-box -->
-                    <div class="features-box col-md-4">
-                        <div class="time-line-icon">
-                            <i class="fa fa-cogs"></i>
-                        </div>
-                        <h3>Admin Panel</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
-                    </div>
-                    <!-- features-box end  -->
-                    <!--features-box -->
-                    <div class="features-box col-md-4">
-                        <div class="time-line-icon">
-                            <i class="fa fa-television"></i>
-                        </div>
-                        <h3>Mobile Friendly</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.  </p>
-                    </div>
-                    <!-- features-box end  -->
-                </div>
-                <!-- features-box-container end  -->
             </div>
         </section>
         <!-- section end -->
@@ -105,16 +71,15 @@
         <section id="sec4">
             <div class="container">
                 <div class="section-title">
-                    <h2>Our Team</h2>
+                    <h2>Team Kami</h2>
                     <div class="section-subtitle">The Team</div>
                     <span class="section-separator"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
                 </div>
                 <div class="team-holder section-team fl-wrap">
                     <!-- team-item -->
                     <div class="team-box">
                         <div class="team-photo">
-                            <img src="{{ asset('/template/katalog/images/team/1.jpg') }}" alt="" class="respimg">
+                            <img src="{{ asset('/template/katalog/images/team/qito.jpg') }}" alt="" class="respimg">
                         </div>
                         <div class="team-info">
                             <h3><a href="#">Alisa Gray</a></h3>
@@ -132,7 +97,7 @@
                     <!-- team-item -->
                     <div class="team-box">
                         <div class="team-photo">
-                            <img src="{{ asset('/template/katalog/images/team/2.jpg') }}" alt="" class="respimg">
+                            <img src="{{ asset('/template/katalog/images/team/jeri.jpg') }}" alt="" class="respimg">
                         </div>
                         <div class="team-info">
                             <h3><a href="#">Austin Evon</a></h3>

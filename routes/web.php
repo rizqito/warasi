@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@home')->name('home');
 Route::get('/berita', 'HomeController@berita')->name('berita');
-Route::get('/berita-single', 'HomeController@beritaSingle')->name('blogSingle');
+Route::get('/detail-berita', 'HomeController@detailBerita')->name('detail-berita');
 Route::get('/tentang-kami', 'HomeController@tentangKami')->name('tentangKami');
 Route::get('/list', 'HomeController@list')->name('list');
 Route::get('/login','HomeController@login')->name('login');
