@@ -34,5 +34,8 @@ Route::get('/berita/{id}/detail', 'AdminAuth\BeritaController@detail')->name('be
 Route::patch('/berita/{id}/update', 'AdminAuth\BeritaController@update')->name('berita.update');
 Route::delete('/berita/{id}/destroy','AdminAuth\BeritaController@destroy')->name('berita.destroy');
 
+Route::get('/mitra', 'AdminAuth\MitraController@index')->name('mitra');
+Route::get('/pelanggan', 'AdminAuth\PelangganController@index')->name('pelanggan');
+Route::get('/teknisi', 'AdminAuth\TeknisiController@index')->name('teknisi');
 // Route::get('/dosen/laporan', 'AdminAuth\KategoriJasaController@laporan')->name('dosen.laporan');
 // Route::get('/dosen/{nidn}/detail', 'AdminAuth\KategoriJasaController@detail')->name('dosen.detail');

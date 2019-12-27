@@ -3,10 +3,10 @@
 <div class="container-fluid">
     <div class="page_header">
         <div class="left">
-            <h1>Teknisi</h1>
+            <h1>Pelanggan</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index-2.html"><i class="fa fa-home"></i></a></li>
-                <li class="breadcrumb-item active">Teknisi</li>
+                <li class="breadcrumb-item active">Pelanggan</li>
             </ol>
         </div>
         <div class="right">
@@ -21,7 +21,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="header">
-                    <h2>Data Teknisi</h2>
+                    <h2>Data Pelanggan</h2>
                 </div>
                 <hr>
                 <div class="body">

@@ -21,7 +21,7 @@
                         <h2 class="heading h3 mb-0">Detail Berita</h2>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="https://thememakker.com/templates/arrowlite/documentation/buttons.html" class="btn btn-primary btn-animated btn-animated-x">
+                        <a href="{{route('admin.berita.edit',$berita)}}" class="btn btn-primary btn-animated btn-animated-x">
                             <span class="btn-inner--visible">Ubah Berita</span>
                             <span class="btn-inner--hidden"><i class="fa fa-edit"></i></span>
                         </a>

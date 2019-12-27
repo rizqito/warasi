@@ -12,10 +12,14 @@
         </div>
     </div>
     <div class="col-md-9">
-        @if(count($jasaService)!=0)
+        @if(count($jasaService)!=0 && $idJasaService->status==0)
         <div class="notification success fl-wrap">
-            <p>Kamu Belum Menawarkan Jasa Mu. Ayo <a href="#">publikasikan</a> sekarang.</p>
-            <a class="notification-close" href="#"><i class="fa fa-times"></i></a>
+            <!-- <a class="notification-close" href="#"><i class="fa fa-times"></i></a> -->
+            <form method="post" action="{{ route('mitra.service.publikasi',$idJasaService->id)}}">
+                @csrf
+                @method('PATCH')
+                <p>Klik Publikasikan untuk mengaktifkan jasa servicemu <button type="submit" class="btn btn-primary">Publikasikan</button> sekarang</p>
+            </form>
         </div>
         @endif
         <div class="dashboard-list-box fl-wrap">
@@ -27,20 +31,27 @@
                 @foreach($jasaService as $js)
                 <div class="dashboard-list">
                     <div class="dashboard-message">
-                        <span class="new-dashboard-item">New</span>
+                        @if($js->status==0)
+                        <span class="new-dashboard-item">Belum Aktif</span>
+                        @else
+                        <span class="new-dashboard-item">Aktif</span>
+                        @endif
                         <div class="dashboard-listing-table-image">
-                            <a href="listing-single.html"><img src="{{ asset('template/katalog/images/all/3.jpg') }}" alt=""></a>
+                            <a href="listing-single.html"><img src="{{ '/storage/JasaService/'.$js  ->foto }}" alt=""></a>
                         </div>
                         <div class="dashboard-listing-table-text">
-                            <h4><a href="listing-single.html">Event In City Hall</a></h4>
-                            <span class="dashboard-listing-table-address"><i class="fa fa-map-marker"></i><a  href="#">USA 27TH Brooklyn NY</a></span>
+                            <h4><a href="listing-single.html">{{$js->nama_jasa}}</a></h4>
+                            <span class="dashboard-listing-table-address"><i class="fa fa-map-marker"></i><a  href="#">{{$js->alamat}}</a></span>
                             <div class="listing-rating card-popup-rainingvis fl-wrap" data-starrating2="5">
                                 <span>(2 reviews)</span>
                             </div>
-                            <ul class="dashboard-listing-table-opt  fl-wrap">
-                                <li><a href="#" class="btn">Publikasikan <i class="fa fa-arrow-up"></i></a></li>
-                                <li><a href="#">Edit <i class="fa fa-pencil-square-o"></i></a></li>
-                                <li><a href="#" class="del-btn">Delete <i class="fa fa-trash-o"></i></a></li>
+                            <ul class="dashboard-listing-table-opt  fl-wrap">                                
+                                <li><a href="{{route('mitra.service.edit',$js)}}">Ubah <i class="fa fa-pencil-square-o"></i></a></li>
+                                <li><a href="" onclick="event.preventDefault();document.getElementById('delete').submit();" class="del-btn">Hapus <i class="fa fa-trash-o"></i></a></li>                                
+                                <form id="delete" method="post" action="{{ route('mitra.service.destroy',$js) }}" style="display: none;">
+                                    @csrf
+                                    @method('DELETE')
+                                </form>
                             </ul>
                         </div>
                     </div>

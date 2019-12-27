@@ -20,7 +20,7 @@ class JasaService extends Migration
             $table->string('email',50);
             $table->string('no_telp',15);
             $table->string('alamat',150);
-            $table->string('foto',100);
+            $table->string('foto',100)->nullable();
             $table->text('deskripsi');
             $table->boolean('status');
             $table->timestamps();

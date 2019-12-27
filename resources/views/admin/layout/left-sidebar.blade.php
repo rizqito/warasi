@@ -16,9 +16,9 @@
             <li class="@if(request()->is('admin') || request()->is('admin/home')) active @endif"><a href="{{route('admin.home')}}"><i class="ti-home"></i><span>Dashboard</span></a></li>
             
             <li class="g_heading">-- Jasa Service</li>
-            <li><a href="{{ route('admin.mitra') }}"><i class="fa fa-users"></i><span>Mitra</span></a></li>
-            <li><a href="app-inbox.html"><i class="fa fa-users"></i><span>Pelanggan</span></a></li>                
-            <li><a href="app-chat.html"><i class="fa fa-users"></i><span>Teknisi</span></a></li>
+            <li class="@if(request()->is('admin/mitra')) active @endif"><a href="{{ route('admin.mitra') }}"><i class="fa fa-users"></i><span>Mitra</span></a></li>
+            <li class="@if(request()->is('admin/pelanggan')) active @endif"><a href="{{ route('admin.pelanggan') }}"><i class="fa fa-users"></i><span>Pelanggan</span></a></li>                
+            <li class="@if(request()->is('admin/teknisi')) active @endif"><a href="{{ route('admin.teknisi') }}"><i class="fa fa-users"></i><span>Teknisi</span></a></li>
             <li class="g_heading">-- Master</li>
             <li class="
                 @if(request()->is('admin/berita') || request()->is('admin/berita/create') || request()->is('admin/berita/*/edit')) active @endif

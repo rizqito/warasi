@@ -76,11 +76,11 @@
             <footer class="main-footer dark-footer  ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-8">
                             <div class="footer-widget fl-wrap">
                                 <h3>Tentang Kami</h3>
                                 <div class="footer-contacts-widget fl-wrap">
-                                    <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
+                                    <p>Warasi merupakan singkatan dari Wadahnya Reparasi guna memudahkan pengguna untuk mencari jasa service yang terupdate dan terpercaya. </p>
                                     <ul  class="footer-contacts fl-wrap">
                                         <li><span><i class="fa fa-envelope-o"></i> EMail :</span><a href="#" target="_blank">cs@warasi.id</a></li>
                                         <li> <span><i class="fa fa-map-marker"></i> Alamat :</span><a href="#" target="_blank">Jl. M. Yamin, No.1, Stmik Widya Cipta Dharma</a></li>
@@ -91,39 +91,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="footer-widget fl-wrap">
-                                <h3>Berita Terkini</h3>
-                                <div class="widget-posts fl-wrap">
-                                    <ul>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/1.jpg') }}" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Vivamus dapibus rutrum</a>
-                                                <span class="widget-posts-date"> 21 Mar 09.05 </span>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/2.jpg') }}" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title=""> In hac habitasse platea</a>
-                                                <span class="widget-posts-date"> 7 Mar 18.21 </span>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <a href="#"  class="widget-posts-img"><img src="{{ asset('template/katalog/images/all/3.jpg') }}" class="respimg" alt=""></a>
-                                            <div class="widget-posts-descr">
-                                                <a href="#" title="">Tortor tempor in porta</a>
-                                                <span class="widget-posts-date"> 7 Mar 16.42 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="footer-widget fl-wrap">
                                 <h3>Subscribe</h3>
                                 <div class="subscribe-widget fl-wrap">
-                                    <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                                    <p>Ikuti Kami Untuk Mendapatkan Notif Seputar Tentang Kami</p>
                                     <div class="subcribe-form">
                                         <form id="subscribe">
                                             <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">

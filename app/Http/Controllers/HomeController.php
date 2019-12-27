@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\JasaService;
+use App\KategoriMitra;
 
 class HomeController extends Controller
 {
     public function home(){
-    	return view('home');
+        $jasaService=JasaService::where('status',1)->limit(10)->get();
+    	return view('home',compact('jasaService'));
     }
 
     public function berita(){
@@ -28,5 +31,9 @@ class HomeController extends Controller
 
     public function login(){
         return view('login-mitra');
+    }
+    public function detail($id){
+    	$jasaService=JasaService::find($id);
+        return view('detail',compact('jasaService'));
     }
 }

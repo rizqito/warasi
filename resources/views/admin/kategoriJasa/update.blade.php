@@ -3,11 +3,11 @@
 <div class="container-fluid">
     <div class="page_header">
         <div class="left">
-            <h1>Tambah Kategori</h1>
+            <h1>Ubah Kategori</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.home')}}"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Kategori Jasa</li>
-                <li class="breadcrumb-item active">Tambah Kategori</li>
+                <li class="breadcrumb-item active">Ubah Kategori</li>
             </ol>
         </div>
     </div>
@@ -16,7 +16,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="header">
-                    <h2>Form Tambah Kategori</h2>
+                    <h2>Form Ubah Kategori</h2>
                 </div>
                 <div class="body">
                     <form id="advanced-form" method="post" data-parsley-validate novalidate action="{{ route('admin.kategoriJasa.update',$kategoriJasa) }}">

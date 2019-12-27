@@ -145,155 +145,26 @@
                         <div class="list-carousel fl-wrap card-listing ">
                             <!--listing-carousel-->
                             <div class="listing-carousel  fl-wrap ">
+                                @foreach($jasaService as $js)
                                 <!--slick-slide-item-->
                                 <div class="slick-slide-item">
                                     <!-- listing-item -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/1.jpg') }}" alt="">
-                                                <div class="overlay"></div>
-                                                <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">Retail</a>
-                                                <h3><a href="listing-single.html">Event in City Mol</a></h3>
-                                                <p>Sed interdum metus at nisi tempor laoreet.  </p>
-                                                <div class="geodir-category-options fl-wrap">
-                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                        <span>(7 reviews)</span>
-                                                    </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 27th Brooklyn New York, NY 10065</a></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end-->
-                                </div>
-                                <!--slick-slide-item end-->
-                                <!--slick-slide-item-->
-                                <div class="slick-slide-item">
-                                    <!-- listing-item -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/2.jpg') }}" alt="">
-                                                <div class="overlay"></div>
-                                                <div class="list-post-counter"><span>15</span><i class="fa fa-heart"></i></div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">Handphone, Gadget, Tab</a>
-                                                <h3><a href="listing-single.html">Siap Cell</a></h3>
-                                                <p>Morbi suscipit erat in diam bibendum rutrum in nisl.</p>
-                                                <div class="geodir-category-options fl-wrap">
-                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
-                                                        <span>(17 reviews)</span>
-                                                    </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. M. Yamin No. 100</a></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end-->
-                                </div>
-                                <!--slick-slide-item end-->
-                                <!--slick-slide-item-->
-                                <div class="slick-slide-item">
-                                    <!-- listing-item -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/20.jpg') }}" alt="">
-                                                <div class="overlay"></div>
-                                                <div class="list-post-counter"><span>13</span><i class="fa fa-heart"></i></div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">Komputer, Laptop, Notebook, Printer </a>
-                                                <h3><a href="listing-single.html">Lancar Jaya</a></h3>
-                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
-                                                <div class="geodir-category-options fl-wrap">
-                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="3">
-                                                        <span>(16 reviews)</span>
-                                                    </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. </a></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end-->
-                                </div>
-                                <!--slick-slide-item end-->
-                                <!--slick-slide-item-->
-                                <div class="slick-slide-item">
-                                    <!-- listing-item -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/5.jpg') }}" alt="">
-                                                <div class="overlay"></div>
-                                                <div class="list-post-counter"><span>3</span><i class="fa fa-heart"></i></div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">Mesin Cuci</a>
-                                                <h3><a href="listing-single.html">Mantap Jaya</a></h3>
-                                                <p>Morbiaccumsan ipsum velit tincidunt . </p>
-                                                <div class="geodir-category-options fl-wrap">
-                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4">
-                                                        <span>(6 reviews)</span>
-                                                    </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Pramuka No.22 Samarinda</a></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end-->
-                                </div>
-                                <!--slick-slide-item end-->
-                                <!--slick-slide-item-->
-                                <div class="slick-slide-item">
-                                    <!-- listing-item -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/6.jpg') }}" alt="">
-                                                <div class="overlay"></div>
-                                                <div class="list-post-counter"><span>35</span><i class="fa fa-heart"></i></div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">Handphone, Gadget, Tab</a>
-                                                <h3><a href="listing-single.html">AC Bersaudara</a></h3>
-                                                <p>Lorem ipsum gravida nibh vel velit.</p>
-                                                <div class="geodir-category-options fl-wrap">
-                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
-                                                        <span>(11 reviews)</span>
-                                                    </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Danau Toba No. 34</a></div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end-->
-                                </div>
-                                <!--slick-slide-item end-->
-                                <!--slick-slide-item-->
-                                <div class="slick-slide-item">
-                                    <!-- listing-item -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <img src="{{ asset('template/katalog/images/all/4.jpg') }}" alt="">
+                                                <img src="{{ '/storage/JasaService/'.$js->foto }}" alt="">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
                                                 <a class="listing-geodir-category" href="listing.html">TV, LCD, Proyektor</a>
-                                                <h3><a href="listing-single.html">SIJAGOKOM</a></h3>
-                                                <p>Sed non neque elit. Sed ut imperdie.</p>
+                                                <h3><a href="{{route('detail',$js)}}">{{$js->nama_jasa}}</a></h3>
+                                                <p>{{$js->deskripsi}}</p>
                                                 <div class="geodir-category-options fl-wrap">
                                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
                                                         <span>(7 reviews)</span>
                                                     </div>
-                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Juanda No.1 Samarinda</a></div>
+                                                    <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> {{$js->alamat}}</a></div>
                                                 </div>
                                             </div>
                                         </article>
@@ -301,6 +172,7 @@
                                     <!-- listing-item end-->
                                 </div>
                                 <!--slick-slide-item end-->
+                                @endforeach
                             </div>
                             <!--listing-carousel end-->
                             <div class="swiper-button-prev sw-btn"><i class="fa fa-long-arrow-left"></i></div>
@@ -383,32 +255,6 @@
                     <section class="color-bg">
                         <div class="shapes-bg-big"></div>
                         <div class="container">
-                            <div class=" single-facts fl-wrap">
-                                <!-- inline-facts -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="254">154</div>
-                                            </div>
-                                        </div>
-                                        <h6>Penyedia Jasa Service Sekarang</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                                <!-- inline-facts  -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="12168">12168</div>
-                                            </div>
-                                        </div>
-                                        <h6>Pelanggan Yang Melakukan Service</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                            </div>
                         </div>
                     </section>
                     <!-- section end -->
@@ -430,7 +276,7 @@
                                 <div class="slick-slide-item">
                                     <div class="testimonilas-text">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch itecto beatae vitae dicta sunt explicabo. </p>
+                                        <p>Layanannya cepat, tanggap semoga makin jaya. </p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
                                         <div class="testimonilas-avatar"><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""></div>
@@ -443,7 +289,7 @@
                                 <div class="slick-slide-item">
                                     <div class="testimonilas-text">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="4"> </div>
-                                        <p>Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                        <p>simple, update, full fitur.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
                                         <div class="testimonilas-avatar"><img src="{{ asset('template/katalog/images/avatar/3.jpg') }}" alt=""></div>
@@ -456,7 +302,7 @@
                                 <div class="slick-slide-item">
                                     <div class="testimonilas-text">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"> </div>
-                                        <p>Feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te odio dignissim qui blandit praesent.</p>
+                                        <p>Sangat Membantu :) memudahkan kita untuk mencari jasa service.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
                                         <div class="testimonilas-avatar"><img src="{{ asset('template/katalog/images/avatar/1.jpg') }}" alt=""></div>
@@ -469,7 +315,7 @@
                                 <div class="slick-slide-item">
                                     <div class="testimonilas-text">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="4"> </div>
-                                        <p>Qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram seacula quarta decima et quinta decima.</p>
+                                        <p>Keren, Sangat Membantu.</p>
                                     </div>
                                     <div class="testimonilas-avatar-item">
                                         <div class="testimonilas-avatar"><img src="{{ asset('template/katalog/images/avatar/6.jpg') }}" alt=""></div>

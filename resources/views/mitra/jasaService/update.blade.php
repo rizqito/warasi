@@ -13,29 +13,30 @@
     </div>
     <div class="col-md-9">
         <!-- profile-edit-container--> 
-        <form method="post" action="{{ route('mitra.service.store') }}" enctype="multipart/form-data">
+        <form method="post" action="{{ route('mitra.service.update',$jasaService) }}" enctype="multipart/form-data">
         @csrf
+        @method('PATCH')
         <div class="profile-edit-container add-list-container">
             <div class="profile-edit-header fl-wrap">
                 <h4>Jasa Service Kamu</h4>
             </div>
             <div class="custom-form">
                 <label>Nama Jasa Servicemu<i class="fa fa-user"></i></label>
-                <input type="text" name="nama_jasa" value="{{ old('nama_jasa') }}"/>
+                <input type="text" name="nama_jasa" value="{{ $jasaService->nama_jasa }}"/>
                 <div class="row">
                     <div class="col-md-6">
                         <label>Email Jasa Servicemu<i class="fa fa-envelope"></i></label>
-                        <input type="text" name="email" value="{{ old('email') }}"/>
+                        <input type="text" name="email" value="{{ $jasaService->email }}"/>
                     </div>
                     <div class="col-md-6">
                         <label>No Telp<i class="fa fa-phone"></i></label>
-                        <input type="text" name="no_telp" value="{{ old('no_telp') }}"/>
+                        <input type="text" name="no_telp" value="{{ $jasaService->no_telp }}"/>
                     </div>
                 </div>
                 <label>Foto<i class="fa fa-image"></i></label>
                 <input type="file" name="foto"/>
                 <label>Alamat<i class="fa fa-map-marker"></i></label>
-                <input type="text" name="alamat" value="{{ old('alamat') }}"/>
+                <input type="text" name="alamat" value="{{ $jasaService->alamat }}"/>
             </div>
         </div>
         <!-- profile-edit-container end--> 
@@ -46,7 +47,7 @@
             </div>
             <div class="custom-form">
                 <label>Deskripsikan Jasa Servicemu</label>
-                <textarea cols="40" rows="3" name="deskripsi" placeholder=""></textarea>
+                <textarea cols="40" rows="3" name="deskripsi" placeholder="">{{$jasaService->deskripsi}}</textarea>
                 <!-- Checkboxes -->
                 <div class=" fl-wrap filter-tags">
                     <h4>Kategori</h4>
