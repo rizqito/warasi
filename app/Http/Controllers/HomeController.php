@@ -15,7 +15,7 @@ class HomeController extends Controller
     }
 
     public function berita(){
-        $berita=Berita::all()->paginate(3);
+        $berita=Berita::all();
     	return view('berita',compact('berita'));
     }
 

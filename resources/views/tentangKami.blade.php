@@ -36,12 +36,6 @@
         </div>
         <section  id="sec2">
             <div class="container">
-                <div class="section-title">
-                    <h2> Siapa Netflix ?</h2>
-                    <div class="section-subtitle">Warasi</div>
-                    <span class="section-separator"></span>
-                </div>
-                <!--about-wrap -->
                 <div class="about-wrap">
                     <div class="row">
                         <div class="col-md-6">
@@ -52,15 +46,10 @@
                         </div>
                         <div class="col-md-6">
                             <div class="list-single-main-item-title fl-wrap">
-                                <h3>Our Awesome <span>Story</span></h3>
-                                <h4>Check video presentation to find   out more about us .</h4>
+                                <h3>Apa itu <span>Warasi</span></h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.
-                            </p>
-                            <a href="#sec3" class="btn transparent-btn float-btn custom-scroll-link">Our Team <i class="fa fa-users"></i></a>
+                            <p>Warasi singkatan dari Wadahnya Reparasi guna memudahkan pengguna untuk mencari jasa service yang aman dan terpercaya khususnya untuk ibu kota kalimantan timur.</p>
                         </div>
                     </div>
                 </div>
@@ -82,14 +71,11 @@
                             <img src="{{ asset('/template/katalog/images/team/qito.jpg') }}" alt="" class="respimg">
                         </div>
                         <div class="team-info">
-                            <h3><a href="#">Alisa Gray</a></h3>
-                            <h4>Business consultant</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            <h3><a href="#">Qito</a></h3>
+                            <h4>Backend Developer</h4>
+                            <p>Mencoba untuk jadi yang terbaik</p>
                             <ul class="team-social">
-                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://web.facebook.com/qito.rizqi" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -100,14 +86,11 @@
                             <img src="{{ asset('/template/katalog/images/team/jeri.jpg') }}" alt="" class="respimg">
                         </div>
                         <div class="team-info">
-                            <h3><a href="#">Austin Evon</a></h3>
-                            <h4>Photographer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            <h3><a href="#">Jeriawan</a></h3>
+                            <h4>TypeWriter</h4>
+                            <p>Gagal itu makanan sehari-hari. Itu biasa, yang penting bagimana (kamu) menyikapinya. Evaluasi. Bangkit. Gagal lagi? Bangkit lagi!</p>
                             <ul class="team-social">
                                 <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -115,17 +98,14 @@
                     <!-- team-item -->
                     <div class="team-box">
                         <div class="team-photo">
-                            <img src="{{ asset('/template/katalog/images/team/3.jpg') }}" alt="" class="respimg">
+                            <img src="{{ asset('/template/katalog/images/team/ikhmal.jpg') }}" alt="" class="respimg">
                         </div>
                         <div class="team-info">
-                            <h3><a href="#">Taylor Roberts</a></h3>
-                            <h4>Co-manager associated</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            <h3><a href="#">IKhmal Cahyadi</a></h3>
+                            <h4>FrontEnd Developer</h4>
+                            <p>Rahasia sukses sebenarnya adalah semangat. Ya, lebih dari semangat adalah bersemangat. Saya suka melihat orang bersemangat. Apabila mereka bersemangat mereka membuat hidup mereka sukses</p>
                             <ul class="team-social">
-                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="https://web.facebook.com/muhammad.ikhmal.52" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
                         </div>
                     </div>
