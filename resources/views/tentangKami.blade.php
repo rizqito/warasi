@@ -49,7 +49,11 @@
                                 <h3>Apa itu <span>Warasi</span></h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <p>Warasi singkatan dari Wadahnya Reparasi guna memudahkan pengguna untuk mencari jasa service yang aman dan terpercaya khususnya untuk ibu kota kalimantan timur.</p>
+                            <p>Warasi singkatan dari Wadahnya Reparasi guna memudahkan pengguna untuk mencari jasa service yang aman dan terpercaya khususnya untuk ibu kota kalimantan timur,Aplikasi ini menampilkan secara detail jasa service, ulasan, alamat dan kontak sehingga dengan begitu masyarakat tidak perlu pusing untuk mencari jasa atau tempat service sesuai keinginannya.
+                                Dengan menggunakan Aplikasi Penyediaan Jasa Service Berbasis Web yang kami buat. 
+                                Harapannya para penyedia jasa service dapat memasarkan jasanya kepada masyarakat dengan jangkauan ke beberapa wilayah di Kalimantan Timur, 
+                                melalui layanan online ini kami harapkan dapat memudahkan konsumen untuk mendapatkan informasi secara lengkap tentang penyedia jasa service dan jasa yang ditawarkannya selain itu juga masyarakat mendapatkan jasa service yang berkualitas dan terpercaya.
+                            </p>
                         </div>
                     </div>
                 </div>
