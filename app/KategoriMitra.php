@@ -11,7 +11,9 @@ class KategoriMitra extends Model
     protected $fillable = [
         'id_jasa_service','id_kategori'
     ];
-
+    public function kategori(){
+        return $this->belongsTo('App\KategoriJasa','id_kategori');
+    }
     public function jasaService(){
         return $this->belongsTo('App\JasaService','id_jasa_service');
     }

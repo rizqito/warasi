@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\JasaService;
 use App\KategoriMitra;
 use App\Berita;
+use App\Galeri;
+use App\JamOperasi;
 
 class HomeController extends Controller
 {
@@ -35,7 +37,10 @@ class HomeController extends Controller
         return view('login-mitra');
     }
     public function detail($id){
-    	$jasaService=JasaService::find($id);
-        return view('detail',compact('jasaService'));
+        $j=JasaService::find($id);
+        $kategori=KategoriMitra::where('id_jasa_service',$id)->get();
+        $galeri=Galeri::where('id_jasa_service',$id)->get();
+        $jamKerja=JamOperasi::where('id_jasa_service',$id)->get();
+        return view('detail',compact('j','kategori','galeri','jamKerja'));
     }
 }

@@ -38,8 +38,8 @@
             <div class="statistic-item-wrap"> 
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa fa-eye"></i>
-                <div class="statistic-item-numder">1</div>
-                <h5>Tampilan</h5>
+                <div class="statistic-item-numder">2</div>
+                <h5>Telah Dilihat</h5>
             </div>
             </div>
         <!-- statistic-item-wrap end-->                                             

@@ -29,7 +29,7 @@
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
                     <div class="logo-holder">
-                        <a href="index-2.html"><img src="{{ asset('template/katalog/images/logo3.png') }}" alt=""></a>
+                        <a href="{{route('home')}}"><img src="{{ asset('template/katalog/images/logo3.png') }}" alt=""></a>
                     </div>
                     <a href="#" class="add-list modal-open">Login <span><i class="fa fa-sign-in"></i></span></a>
                     <!-- nav-button-wrap-->

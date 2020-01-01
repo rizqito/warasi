@@ -1,16 +1,7 @@
 <?php
 
-Route::get('/home', function () {
-    $users[] = Auth::user();
-    $users[] = Auth::guard()->user();
-    $users[] = Auth::guard('mitra')->user();
-
-    //dd($users);
-
-    return view('mitra.home');
-})->name('home');
-
 Route::get('/', 'MitraAuth\HomeController@index')->name('home');
+Route::get('/home', 'MitraAuth\HomeController@index')->name('home');
 Route::get('/servicemu', 'MitraAuth\JasaServiceController@index')->name('service');
 Route::get('/servicemu/create', 'MitraAuth\JasaServiceController@create')->name('service.create');
 Route::post('/service/store', 'MitraAuth\JasaServiceController@store')->name('service.store');
@@ -32,4 +23,6 @@ Route::patch('/jam-operasi/{id}/update', 'MitraAuth\JamOperasiController@update'
 
 Route::get('/profil', 'MitraAuth\ProfilController@index')->name('profil');
 Route::patch('/profil/{id}/update', 'MitraAuth\ProfilController@update')->name('profil.update');
-Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');		
+
+Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');
+Route::patch('/ubah-password/{id}/update', 'MitraAuth\ProfilController@updatePassword')->name('password.update');

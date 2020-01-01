@@ -25,10 +25,20 @@ class ProfilController extends Controller
             'no_telp'=>request('no_telp'),
             'foto' => $file
         ]);
-        return redirect()->route('mitra.profil')->with('success','Berhasil Ubah Data jasaService.');
+        return redirect()->route('mitra.profil')->with('success','Berhasil Ubah Data Profil.');
     }
 
     public function password(){
         return view('mitra.password.index');
+    }
+    public function updatePassword(Request $request, $id){
+        $this->validate($request, [
+            'password' => 'required|string|min:6|different:current_password|confirmed',
+        ]);
+        $mitra=Mitra::find($id);
+        $mitra->update([
+            'password'=>bcrypt($request->input('password'))
+        ]);
+        return redirect()->route('mitra.password')->with('success','Berhasil Ubah Data password.');
     }
 }
