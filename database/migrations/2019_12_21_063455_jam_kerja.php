@@ -14,6 +14,7 @@ class JamKerja extends Migration
     public function up()
     {
         Schema::create('jam_kerja', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('id_jasa_service')->index()->unsigned();
             $table->string('hari',10);
             $table->time('jam_buka');

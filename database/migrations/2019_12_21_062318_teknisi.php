@@ -14,6 +14,7 @@ class Teknisi extends Migration
     public function up()
     {
         Schema::create('teknisi', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('id_jasa_service')->index()->unsigned();
             $table->string('nama',50);
             $table->string('no_telp',15);

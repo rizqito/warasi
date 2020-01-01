@@ -19,5 +19,16 @@ Route::get('/mitra/{id}/edit', 'MitraAuth\JasaServiceController@edit')->name('se
 Route::patch('/mitra/{id}/update', 'MitraAuth\JasaServiceController@update')->name('service.update');
 Route::delete('/mitra/{id}/destroy','MitraAuth\JasaServiceController@destroy')->name('service.destroy');
 
+Route::get('/galeri-service', 'MitraAuth\GaleriController@index')->name('galeriService');
+Route::get('/galeri-service/create', 'MitraAuth\GaleriController@create')->name('galeriService.create');
+Route::post('/galeri-service/store', 'MitraAuth\GaleriController@store')->name('galeriService.store');
+Route::delete('/galeri-service/{id}/destroy','MitraAuth\GaleriController@destroy')->name('galeriService.destroy');
+
+Route::get('/jam-operasi', 'MitraAuth\JamOperasiController@index')->name('jamOperasi');
+Route::get('/jam-operasi/create', 'MitraAuth\JamOperasiController@create')->name('jamOperasi.create');
+Route::post('/jam-operasi/store', 'MitraAuth\JamOperasiController@store')->name('jamOperasi.store');
+Route::get('/jam-operasi/{id}/edit', 'MitraAuth\JamOperasiController@edit')->name('jamOperasi.edit');
+Route::patch('/jam-operasi/{id}/update', 'MitraAuth\JamOperasiController@update')->name('jamOperasi.update');
+
 Route::get('/profil', 'MitraAuth\ProfilController@index')->name('profil');
 Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');		

@@ -14,6 +14,7 @@ class Ulasan extends Migration
     public function up()
     {
         Schema::create('ulasan', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('id_jasa_service')->index()->unsigned();
             $table->integer('id_pelanggan')->index()->unsigned();
             $table->tinyInteger('rating');

@@ -14,6 +14,7 @@ class Pesan extends Migration
     public function up()
     {
         Schema::create('pesan', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('id_jasa_service')->index()->unsigned();
             $table->integer('id_pelanggan')->index()->unsigned();
             $table->timestamps();

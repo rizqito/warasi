@@ -14,6 +14,7 @@ class KategoriJasa extends Migration
     public function up()
     {
         Schema::create('kategori_jasa', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('id_jasa_service')->index()->unsigned();
             $table->integer('id_kategori')->index()->unsigned();
             $table->timestamps();

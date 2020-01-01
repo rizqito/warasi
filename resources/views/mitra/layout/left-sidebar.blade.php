@@ -8,8 +8,12 @@
             <li><a href="{{ route('mitra.service') }}" class="
                 @if(request()->is('mitra/servicemu') || request()->is('mitra/servicemu/create')) user-profile-act @endif
             "><i class="fa fa-th-list"></i> Jasa Servicemu</a></li>
-            <li><a href=""><i class="fa fa-image"></i> Galeri Jasa Servicemu</a></li>
-            <li><a href=""><i class="fa fa-list"></i> Jam Operasional</a></li>
+            <li><a href="{{ route('mitra.galeriService') }}" class="
+                @if(request()->is('mitra/galeri-service') || request()->is('mitra/galeri-service/create')) user-profile-act @endif
+            "><i class="fa fa-image"></i> Galeri Jasa Servicemu</a></li>
+            <li><a href="{{ route('mitra.jamOperasi') }}" class="
+                @if(request()->is('mitra/jam-operasi') || request()->is('mitra/jam-operasi/create') || request()->is('mitra/jam-operasi/*/edit')) user-profile-act @endif
+            "><i class="fa fa-list"></i> Jam Operasional</a></li>
         </ul>
     </div>
     <!-- user-profile-menu end-->
