@@ -16,7 +16,6 @@
                 </div>
             </div>
             <div class="header-sec-link">
-                <div class="container"><a href="#sec2" class="custom-scroll-link">Ayo Mulai</a></div>
             </div>
         </section>
         <!-- section end -->
@@ -40,8 +39,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="video-box fl-wrap">
-                                <img src="{{ asset('/template/katalog/images/all/16.jpg') }}" alt="">
-                                <a class="video-box-btn image-popup" href="https://vimeo.com/264074381"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <img src="{{ asset('/template/katalog/images/all/16.png') }}" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -77,7 +75,7 @@
                         <div class="team-info">
                             <h3><a href="#">Qito</a></h3>
                             <h4>Backend Developer</h4>
-                            <p>Mencoba untuk jadi yang terbaik</p>
+                            <p>Halo semua Nama saya Rizqi tapi teman-teman saya memanggil saya qito saya berusia 21 tahun, saya lahir tanggal 25 juni 1999 di kota samarinda kalimantan timur. hobi saya adalah ngoding, alasan kenapa saya suka ngoding adalah karna kelak kau akan paham  bahwa hal kecil dapat berpengaruh besar. </p>
                             <ul class="team-social">
                                 <li><a href="https://web.facebook.com/qito.rizqi" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
@@ -92,7 +90,7 @@
                         <div class="team-info">
                             <h3><a href="#">Jeriawan</a></h3>
                             <h4>TypeWriter</h4>
-                            <p>Gagal itu makanan sehari-hari. Itu biasa, yang penting bagimana (kamu) menyikapinya. Evaluasi. Bangkit. Gagal lagi? Bangkit lagi!</p>
+                            <p>Halo Nama saya Jeriawan saya berusia 21 tahun, saya lahir di kota samarinda. hobi saya adalah bernyayi dan Stalking Mantan orang, hal yang terpenting bagi hidup saya adalah berbuat baik, karna saya percaya sebuah kebaikan akan menularkan kebaikan dan memberikan kebahagian pada diri sendiri. </p>
                             <ul class="team-social">
                                 <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
@@ -107,7 +105,7 @@
                         <div class="team-info">
                             <h3><a href="#">IKhmal Cahyadi</a></h3>
                             <h4>FrontEnd Developer</h4>
-                            <p>Rahasia sukses sebenarnya adalah semangat. Ya, lebih dari semangat adalah bersemangat. Saya suka melihat orang bersemangat. Apabila mereka bersemangat mereka membuat hidup mereka sukses</p>
+                            <p>Halo semua Nama saya Muhammad ikhmal cahyadi saya berusia 21 tahun, saya lahir di kota samarinda yang merupakan ibukota kalimantan timur, indonesia. hobi saya ada 2 yaitu bermain game dan fotografi, makanan favorit saya apa saja asalkan itu gratis, halal dan yang paling penting Enak. </p>
                             <ul class="team-social">
                                 <li><a href="https://web.facebook.com/muhammad.ikhmal.52" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
