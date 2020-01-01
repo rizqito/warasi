@@ -10,7 +10,7 @@ Route::get('/home', function () {
     return view('mitra.home');
 })->name('home');
 
-Route::get('/', function () {return view('mitra.home');})->name('home');
+Route::get('/', 'MitraAuth\HomeController@index')->name('home');
 Route::get('/servicemu', 'MitraAuth\JasaServiceController@index')->name('service');
 Route::get('/servicemu/create', 'MitraAuth\JasaServiceController@create')->name('service.create');
 Route::post('/service/store', 'MitraAuth\JasaServiceController@store')->name('service.store');
@@ -31,4 +31,5 @@ Route::get('/jam-operasi/{id}/edit', 'MitraAuth\JamOperasiController@edit')->nam
 Route::patch('/jam-operasi/{id}/update', 'MitraAuth\JamOperasiController@update')->name('jamOperasi.update');
 
 Route::get('/profil', 'MitraAuth\ProfilController@index')->name('profil');
+Route::patch('/profil/{id}/update', 'MitraAuth\ProfilController@update')->name('profil.update');
 Route::get('/ubah-password', 'MitraAuth\ProfilController@password')->name('password');		

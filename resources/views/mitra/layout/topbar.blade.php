@@ -5,7 +5,7 @@
         </div>
         <div class="header-user-menu">
             <div class="header-user-name">
-                <span><img src="{{ asset('template/katalog/images/avatar/4.jpg') }}" alt=""></span>
+                <span><img src="{{ '/storage/Mitra/'.Auth::user()->foto }}" alt=""></span>
                 Hallo , {{ Auth::user()->nama }}
             </div>
             <ul>

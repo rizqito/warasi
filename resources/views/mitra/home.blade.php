@@ -28,7 +28,7 @@
             <a href="">
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa-list"></i>
-                <div class="statistic-item-numder">21</div>
+                <div class="statistic-item-numder">{{$kategori}}</div>
                 <h5>Kategori Servis</h5>
             </div>
             </a> 
@@ -38,7 +38,7 @@
             <div class="statistic-item-wrap"> 
             <div class="statistic-item gradient-bg fl-wrap">
                 <i class="fa fa fa-eye"></i>
-                <div class="statistic-item-numder">1054</div>
+                <div class="statistic-item-numder">1</div>
                 <h5>Tampilan</h5>
             </div>
             </div>
