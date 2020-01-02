@@ -13,29 +13,6 @@
                                 <div class="intro-item fl-wrap">
                                     <h2>Temukan Wadah Reparasi Favoritmu</h2>
                                 </div>
-                                <div class="main-search-input-wrap">
-                                    <div class="main-search-input fl-wrap">
-                                        <div class="main-search-input-item">
-                                            <input type="text" placeholder="Service apa yang kamu cari ?" value=""/>
-                                        </div>
-                                        <div class="main-search-input-item location" id="autocomplete-container">
-                                            <input type="text" placeholder="Pilih Lokasi"  value=""/>
-                                            <a href="#"><i class="fa fa-dot-circle-o"></i></a>
-                                        </div>
-                                        <div class="main-search-input-item">
-                                            <select data-placeholder="Pilih Kategori" multiple class="chosen-select" >
-                                                <option>Semua Kategori</option>
-                                                <option>TV, LCD, Proyektor</option>
-                                                <option>Kulkas, Frezzer</option>
-                                                <option>Mesin Cuci</option>
-                                                <option>Komputer, Laptop, Notebook, Printer</option>
-                                                <option>Handphone, Gadget, Tab</option>
-                                                <option>Kamera Digital</option>
-                                            </select>
-                                        </div>
-                                        <button class="main-search-button" onclick="window.location.href='listing.html'">Cari</button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="bubble-bg"> </div>
@@ -60,7 +37,7 @@
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
                                             <img  src="{{ asset('template/katalog/images/all/kat-1.jpg') }}"   alt="">
-                                            <div class="listing-counter"><span>10 </span> Locations</div>
+                                            <div class="listing-counter"><span>{{$kat1}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{ route('kat1') }}">TV, LCD, Proyektor</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
@@ -74,7 +51,7 @@
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
                                             <img  src="{{ asset('template/katalog/images/all/kat-2.jpg') }}"   alt="">
-                                            <div class="listing-counter"><span>6 </span> Locations</div>
+                                            <div class="listing-counter"><span>{{$kat2}}</span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat2')}}">Kulkas, Frezzer</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
@@ -88,7 +65,7 @@
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
                                             <img  src="{{ asset('template/katalog/images/all/kat-3.jpg') }}"   alt="">
-                                            <div class="listing-counter"><span>21 </span> Locations</div>
+                                            <div class="listing-counter"><span>{{$kat3}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat3')}}">Mesin Cuci</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
@@ -102,7 +79,7 @@
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
                                             <img  src="{{ asset('template/katalog/images/all/kat-4.jpg') }}"   alt="">
-                                            <div class="listing-counter"><span>7 </span> Locations</div>
+                                            <div class="listing-counter"><span>{{$kat4}}</span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat4')}}">Komputer, Laptop, Notebook, Printer</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
@@ -116,7 +93,7 @@
                                     <div class="grid-item-holder">
                                         <div class="listing-item-grid">
                                             <img  src="{{ asset('template/katalog/images/all/kat-5.jpg') }}"   alt="">
-                                            <div class="listing-counter"><span>15 </span> Locations</div>
+                                            <div class="listing-counter"><span>{{$kat5}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat5')}}">Handphone, Gadget, Tab</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
@@ -127,7 +104,7 @@
                                 <!-- gallery-item end-->
                             </div>
                             <!-- portfolio end -->
-                            <a href="listing.html" class="btn  big-btn circle-btn dec-btn  color-bg flat-btn">Lihat Selengkapnya<i class="fa fa-eye"></i></a>
+                            <a href="{{ route('list') }}" class="btn  big-btn circle-btn dec-btn  color-bg flat-btn">Lihat Selengkapnya<i class="fa fa-eye"></i></a>
                         </div>
                     </section>
                     <!-- section end -->
@@ -199,7 +176,7 @@
                                 <div class="col-md-6">
                                     <div class="color-bg-text">
                                         <h3>Temukan Wadah Reparasi Favoritmu Disini</h3>
-                                        <a href="#" class="color-bg-link modal-open">Daftar Sekarang</a>
+                                        <a href="{{ url('/user/register') }}" class="color-bg-link modal-open">Daftar Sekarang</a>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,6 @@
             <div class="container">
                 <div class="section-title center-align">
                     <h2><span>Daftar Service</span></h2>
-                    <div class="breadcrumbs fl-wrap"><a href="#">TV, LCD, Proyektor</a></div>
                     <span class="section-separator"></span>
                 </div>
             </div>

@@ -8,12 +8,19 @@ use App\KategoriMitra;
 use App\Berita;
 use App\Galeri;
 use App\JamOperasi;
+use App\KategoriJasa;
 
 class HomeController extends Controller
 {
     public function home(){
         $jasaService=JasaService::where('status',1)->limit(10)->get();
-    	return view('home',compact('jasaService'));
+        $kategori=KategoriJasa::all();
+        $kat1=KategoriMitra::where('id_kategori',4)->count();
+        $kat2=KategoriMitra::where('id_kategori',3)->count();
+        $kat3=KategoriMitra::where('id_kategori',5)->count();
+        $kat4=KategoriMitra::where('id_kategori',2)->count();
+        $kat5=KategoriMitra::where('id_kategori',1)->count();
+    	return view('home',compact('jasaService','kat1','kat2','kat3','kat4','kat5','kategori'));
     }
 
     public function berita(){
