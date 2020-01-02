@@ -24,8 +24,14 @@ class HomeController extends Controller
     }
 
     public function berita(){
-        $berita=Berita::all();
+        $berita=Berita::orderby('updated_at','desc')->paginate(9);
     	return view('berita',compact('berita'));
+    }
+
+    public function detailBerita($id){
+        $berita=Berita::find($id);
+        $listberita=Berita::orderby('updated_at','desc')->limit(5)->get();
+        return view('berita-single',compact('berita','listberita'));
     }
 
     public function tentangKami(){
@@ -33,7 +39,8 @@ class HomeController extends Controller
     }
 
     public function list(){
-    	return view('list');
+        $jasa=JasaService::where('status',1)->paginate(9);
+    	return view('list',compact('jasa'));
     }
 
     public function beritaSingle(){

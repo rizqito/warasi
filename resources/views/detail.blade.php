@@ -37,8 +37,7 @@
                             <div class="col-md-6">
                                 <div class="fl-wrap list-single-header-column">
                                     <div class="share-holder hid-share">
-                                        <div class="showshare"><span>Chat Via Wa </span><i class="fa fa-whatsapp"></i></div>
-                                        <div class="share-container  isShare"></div>
+                                        <a href="http://wa.me/{{ '62'.substr($j->no_telp,1,12) }}?text=Saya%20tertarik%20dengan%20jasa%20reparasi%20Anda" class="add-list" target="blank" style="margin-top:-15px;">Chat via WA <span><i class="fa fa-whatsapp"></i></span></a>
                                     </div>
                                     <span class="viewed-counter"><i class="fa fa-eye"></i> Telah Dilihat -  156 </span>
                                     <a class="custom-scroll-link" href="#sec5"><i class="fa fa-hand-o-right"></i>Kirim Ulasan </a>

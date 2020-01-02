@@ -65,7 +65,7 @@
                                 <div class="geodir-category-content fl-wrap">
                                     <a class="listing-geodir-category" href="listing.html">Komputer, Laptop, Notebook, Printer</a>
                                     <div class="listing-avatar"><a href="author-single.html"><img src="{{ '/storage/Mitra/'.$k->jasaService->mitra->foto }}" alt=""></a>
-                                        <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
+                                    <span class="avatar-tooltip">Dibuat oleh  <strong>{{$k->jasaService->mitra->nama}}</strong></span>
                                     </div>
                                     <h3><a href="listing-single.html">{{ $k->jasaService->nama_jasa }}</a></h3>
                                     <p>{{ $k->jasaService->deskripsi }}</p>

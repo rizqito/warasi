@@ -43,10 +43,16 @@ class BeritaController extends Controller
     }
 
     public function update(Request $request, $id){
+        if (request('foto')=='') {
+            $file = '';
+        }else{
+            $file = request()->foto->getClientOriginalName();
+            $request->foto->storeAs('Berita',$file);        
+        }
         $berita=Berita::find($id);
         $berita->update([
             'judul' => request('judul'),
-            'foto' => '',
+            'foto' => $file,
             'deskripsi' => request('deskripsi')
         ]);
 

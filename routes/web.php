@@ -18,6 +18,7 @@ Route::get('/tentang-kami', 'HomeController@tentangKami')->name('tentangKami');
 Route::get('/list', 'HomeController@list')->name('list');
 Route::get('/login','HomeController@login')->name('login');
 Route::get('/jasa/{id}/detail', 'HomeController@detail')->name('detail');
+Route::get('/berita/{id}/view', 'HomeController@detailBerita')->name('berita.detail');
 Route::get('/jasa/tv-lcd-proyektor', 'HomeController@kat1')->name('kat1');
 Route::get('/jasa/kulkas-frezer', 'HomeController@kat2')->name('kat2');
 Route::get('/jasa/mesin-cuci', 'HomeController@kat3')->name('kat3');
