@@ -6,7 +6,7 @@
     <div class="content">
         <!--  section  -->
         <section class="parallax-section" data-scrollax-parent="true">
-            <div class="bg par-elem "  data-bg="{{ asset('/template/katalog/images/bg/24.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="{{ asset('/template/katalog/images/bg/30.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
             <div class="container">
                 <div class="section-title center-align">
@@ -15,9 +15,7 @@
                     <span class="section-separator"></span>
                 </div>
             </div>
-            <div class="header-sec-link">
-                <div class="container"><a href="#sec1" class="custom-scroll-link">Ayo Mulai</a></div>
-            </div>
+            
         </section>
         <!--  section  end-->
         <!--  section  -->
