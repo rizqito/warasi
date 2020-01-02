@@ -40,7 +40,6 @@
                                             <div class="listing-counter"><span>{{$kat1}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{ route('kat1') }}">TV, LCD, Proyektor</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +53,6 @@
                                             <div class="listing-counter"><span>{{$kat2}}</span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat2')}}">Kulkas, Frezzer</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +66,6 @@
                                             <div class="listing-counter"><span>{{$kat3}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat3')}}">Mesin Cuci</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
                                     </div>
@@ -82,7 +79,6 @@
                                             <div class="listing-counter"><span>{{$kat4}}</span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat4')}}">Komputer, Laptop, Notebook, Printer</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,7 +92,6 @@
                                             <div class="listing-counter"><span>{{$kat5}} </span> Lokasi</div>
                                             <div class="listing-item-cat">
                                                 <h3><a href="{{route('kat5')}}">Handphone, Gadget, Tab</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
                                     </div>
