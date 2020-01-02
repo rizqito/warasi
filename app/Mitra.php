@@ -38,4 +38,7 @@ class Mitra extends Authenticatable
     {
         $this->notify(new MitraResetPassword($token));
     }
+    public function kategori(){
+        return $this->hasOne('App\JasaService','id_mitra');
+    }
 }

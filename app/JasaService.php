@@ -15,6 +15,6 @@ class JasaService extends Model
         return $this->belongsTo('App\Mitra','id_mitra');
     }
     public function kategori(){
-        return $this->hasMany('App\KategoriMitra','id_jasa_service');
+        return $this->hasOne('App\KategoriMitra','id_jasa_service');
     }
 }

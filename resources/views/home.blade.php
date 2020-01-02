@@ -62,7 +62,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/kat-1.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>10 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="{{ route('list') }}">TV, LCD, Proyektor</a></h3>
+                                                <h3><a href="{{ route('kat1') }}">TV, LCD, Proyektor</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -76,7 +76,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/kat-2.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>6 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">Kulkas, Frezzer</a></h3>
+                                                <h3><a href="{{route('kat2')}}">Kulkas, Frezzer</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/kat-3.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>21 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">Mesin Cuci</a></h3>
+                                                <h3><a href="{{route('kat3')}}">Mesin Cuci</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/kat-4.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>7 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">Komputer, Laptop, Notebook, Printer</a></h3>
+                                                <h3><a href="{{route('kat4')}}">Komputer, Laptop, Notebook, Printer</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@
                                             <img  src="{{ asset('template/katalog/images/all/kat-5.jpg') }}"   alt="">
                                             <div class="listing-counter"><span>15 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">Handphone, Gadget, Tab</a></h3>
+                                                <h3><a href="{{route('kat5')}}">Handphone, Gadget, Tab</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -152,12 +152,12 @@
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
                                             <div class="geodir-category-img">
-                                                <img src="{{ '/storage/JasaService/'.$js->foto }}" alt="">
+                                                <img src="{{ '/storage/JasaService/'.$js->foto }}" alt="" style="height:200px;">
                                                 <div class="overlay"></div>
                                                 <div class="list-post-counter"><span>553</span><i class="fa fa-heart"></i></div>
                                             </div>
                                             <div class="geodir-category-content fl-wrap">
-                                                <a class="listing-geodir-category" href="listing.html">TV, LCD, Proyektor</a>
+                                                <a class="listing-geodir-category" href="listing.html">{{$js->kategori->kategori->Kategori}}</a>
                                                 <h3><a href="{{route('detail',$js)}}">{{$js->nama_jasa}}</a></h3>
                                                 <p>{{$js->deskripsi}}</p>
                                                 <div class="geodir-category-options fl-wrap">
