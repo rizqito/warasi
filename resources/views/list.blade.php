@@ -6,16 +6,13 @@
     <div class="content">
         <!--  section  -->
         <section class="parallax-section" data-scrollax-parent="true">
-            <div class="bg par-elem "  data-bg="{{ asset('/template/katalog/images/bg/24.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="{{ asset('/template/katalog/images/bg/25.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
             <div class="container">
                 <div class="section-title center-align">
                     <h2><span>Daftar Service</span></h2>
                     <span class="section-separator"></span>
                 </div>
-            </div>
-            <div class="header-sec-link">
-                <div class="container"><a href="#sec1" class="custom-scroll-link">Let's Start</a></div>
             </div>
         </section>
         <!--  section  end-->
@@ -96,22 +93,7 @@
         <!--  section  end-->
         <div class="limit-box fl-wrap"></div>
         <!--  section  -->
-        <section class="gradient-bg">
-            <div class="cirle-bg">
-                <div class="bg" data-bg="images/bg/circle.png"></div>
-            </div>
-            <div class="container">
-                <div class="join-wrap fl-wrap">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Join our online community</h3>
-                            <p>Grow your marketing and be happy with your online business</p>
-                        </div>
-                        <div class="col-md-4"><a href="#" class="join-wrap-btn modal-open">Sign Up <i class="fa fa-sign-in"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!--  section  end-->
     </div>
     <!--  content  end-->
