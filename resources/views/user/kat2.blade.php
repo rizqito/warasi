@@ -1,4 +1,4 @@
-@extends('layout.frame')
+@extends('user.layout.frame2')
 @section('content')
 <!-- wrapper -->
 <div id="wrapper">
@@ -11,7 +11,7 @@
             <div class="container">
                 <div class="section-title center-align">
                     <h2><span>Daftar Service</span></h2>
-                    <div class="breadcrumbs fl-wrap"><a href="#">Komputer, Laptop, Notebook, Printer</a></div>
+                    <div class="breadcrumbs fl-wrap"><a href="#">Kulkas, Frezzer</a></div>
                     <span class="section-separator"></span>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="listsearch-maiwrap box-inside fl-wrap">
                         <div class="listsearch-header fl-wrap">
-                            <h3>Jasa Reparasi : <span>Komputer, Laptop, Notebook, Printer</span></h3>
+                            <h3>Jasa Reparasi : <span>Kulkas, Frezzer</span></h3>
                         </div>
                         <!-- listsearch-input-wrap  -->
                         <div class="listsearch-input-wrap fl-wrap">
@@ -53,7 +53,7 @@
                     </div>
                     <!-- list-main-wrap-->
                     <div class="list-main-wrap fl-wrap card-listing">
-                        @foreach($kat4 as $k)
+                        @foreach($kat2 as $k)
                         <!-- listing-item -->
                         <div class="listing-item">
                             <article class="geodir-category-listing fl-wrap">
@@ -63,11 +63,11 @@
                                     <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                                 </div>
                                 <div class="geodir-category-content fl-wrap">
-                                    <a class="listing-geodir-category" href="listing.html">Komputer, Laptop, Notebook, Printer</a>
-                                    <div class="listing-avatar"><a href="{{route('detail',$k->jasaService->id)}}"><img src="{{ '/storage/Mitra/'.$k->jasaService->mitra->foto }}" alt=""></a>
-                                    <span class="avatar-tooltip">Dibuat oleh  <strong>{{$k->jasaService->mitra->nama}}</strong></span>
+                                    <a class="listing-geodir-category" href="{{route('user.detail',$k->jasaService->id)}}">Kulkas, Frezzer</a>
+                                    <div class="listing-avatar"><a href="{{route('user.detail',$k->jasaService->id)}}"><img src="{{ '/storage/Mitra/'.$k->jasaService->mitra->foto }}" alt=""></a>
+                                        <span class="avatar-tooltip">Dibuat oleh  <strong>{{$k->jasaService->mitra->nama}}</strong></span>
                                     </div>
-                                    <h3><a href="{{route('detail',$k->jasaService->id)}}">{{ $k->jasaService->nama_jasa }}</a></h3>
+                                    <h3><a href="{{route('user.detail',$k->jasaService->id)}}">{{ $k->jasaService->nama_jasa }}</a></h3>
                                     <p>{{ $k->jasaService->deskripsi }}</p>
                                     <div class="geodir-category-options fl-wrap">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
@@ -80,7 +80,7 @@
                         </div>
                         <!-- listing-item end-->
                         @endforeach
-                        {{$kat4->links('pagination')}}
+                        {{$kat2->links('pagination')}}
                     </div>
                     <!-- list-main-wrap end-->
                 </div>

@@ -1,4 +1,4 @@
-@extends('layout.frame')
+@extends('user.layout.frame2')
 @section('content')
 <!-- wrapper -->
 <div id="wrapper">
@@ -64,10 +64,10 @@
                                 </div>
                                 <div class="geodir-category-content fl-wrap">
                                     <a class="listing-geodir-category" href="listing.html">Komputer, Laptop, Notebook, Printer</a>
-                                    <div class="listing-avatar"><a href="{{route('detail',$k->jasaService->id)}}"><img src="{{ '/storage/Mitra/'.$k->jasaService->mitra->foto }}" alt=""></a>
+                                    <div class="listing-avatar"><a href="{{route('user.detail',$k->jasaService->id)}}"><img src="{{ '/storage/Mitra/'.$k->jasaService->mitra->foto }}" alt=""></a>
                                     <span class="avatar-tooltip">Dibuat oleh  <strong>{{$k->jasaService->mitra->nama}}</strong></span>
                                     </div>
-                                    <h3><a href="{{route('detail',$k->jasaService->id)}}">{{ $k->jasaService->nama_jasa }}</a></h3>
+                                    <h3><a href="{{route('user.detail',$k->jasaService->id)}}">{{ $k->jasaService->nama_jasa }}</a></h3>
                                     <p>{{ $k->jasaService->deskripsi }}</p>
                                     <div class="geodir-category-options fl-wrap">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5">

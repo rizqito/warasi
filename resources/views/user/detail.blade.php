@@ -1,4 +1,4 @@
-@extends('layout.frame')
+@extends('user.layout.frame2')
 @section('content')
 <div id="wrapper">
     <!--  content  --> 
@@ -22,15 +22,15 @@
                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
                             <span>(11 reviews)</span>
                         </div>
-                        <div class="list-post-counter single-list-post-counter"><span>{{$like->count()}}</span><i class="fa fa-heart"></i></div>
+                        <div class="list-post-counter single-list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
                         <div class="clearfix"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="list-single-header-contacts fl-wrap">
                                     <ul>
-                                        <li><i class="fa fa-phone"></i><a  href="#">{{$j->no_telp}}</a></li>
+                                        <li><i class="fa fa-phone"></i><a  href="Tel: {{$j->no_telp}}">{{$j->no_telp}}</a></li>
                                         <li><i class="fa fa-map-marker"></i><a  href="#">{{$j->alamat}}</a></li>
-                                        <li><i class="fa fa-envelope-o"></i><a  href="#">{{$j->email}}</a></li>
+                                        <li><i class="fa fa-envelope-o"></i><a  href="mailto: {{$j->email}}">{{$j->email}}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                                     <div class="share-holder hid-share">
                                         <a href="http://wa.me/{{ '62'.substr($j->no_telp,1,12) }}?text=Saya%20tertarik%20dengan%20jasa%20reparasi%20Anda" class="add-list" target="blank" style="margin-top:-15px;">Chat via WA <span><i class="fa fa-whatsapp"></i></span></a>
                                     </div>
-                                    <span class="viewed-counter"><i class="fa fa-eye"></i> Telah Dilihat -  156 </span>                                    
+                                    <span class="viewed-counter"><i class="fa fa-eye"></i> Telah Dilihat -  156 </span>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,8 @@
                         <li><a href="#sec3">Galeri</a></li>
                         <li><a href="#sec4">Ulasan</a></li>
                     </ul>
-                </nav>                
+                </nav>
+                <a href="#" class="save-btn"> <i class="fa fa-heart"></i> Jadikan Favorit </a>
             </div>
         </div>
         <!--  section  --> 
@@ -191,6 +192,43 @@
                                 </div>
                             </div>
                             <!--box-widget-item end -->
+                            <!--box-widget-item -->
+                            <div class="box-widget-item fl-wrap">
+                                <div class="box-widget-item-header">
+                                    <h3>Tambahkan Ulasan & Nilai Jasa : </h3>
+                                </div>
+                                <div class="box-widget opening-hours">
+                                    <form method="post" action="{{ route('user.ulasan.store') }}" class="add-comment">
+                                    @csrf()
+                                    <div class="box-widget-content">
+                                    <div id="add-review" class="add-review-box">
+                                    <div class="leave-rating-wrap">
+                                        <span class="leave-rating-title">Rating mu untuk layanan : </span>
+                                        <div class="leave-rating">
+                                            <input type="radio" name="rating" id="rating-1" value="5"/>
+                                            <label for="rating-1" class="fa fa-star-o"></label>
+                                            <input type="radio" name="rating" id="rating-2" value="4"/>
+                                            <label for="rating-2" class="fa fa-star-o"></label>
+                                            <input type="radio" name="rating" id="rating-3" value="3"/>
+                                            <label for="rating-3" class="fa fa-star-o"></label>
+                                            <input type="radio" name="rating" id="rating-4" value="2"/>
+                                            <label for="rating-4" class="fa fa-star-o"></label>
+                                            <input type="radio" name="rating" id="rating-5" value="1"/>
+                                            <label for="rating-5" class="fa fa-star-o"></label>
+                                        </div>
+                                    </div>
+                                    <!-- Review Comment -->
+                                        <fieldset class="custom-form">
+                                            <input type="hidden" name="id_jasa_service" value="{{$j->id}}">
+                                            <textarea cols="40" rows="3" name="komentar" placeholder="Ulasan Kamu:"></textarea>
+                                        </fieldset>
+                                        <button class="btn big-btn custom-form color-bg flat-btn">Kirim Ulasan <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--box-widget-item end -->                            
                         </div>
                     </div>
                     <!--box-widget-wrap end -->

@@ -9,6 +9,8 @@ use App\Berita;
 use App\Galeri;
 use App\JamOperasi;
 use App\KategoriJasa;
+use App\Ulasan;
+use App\Like;
 
 class HomeController extends Controller
 {
@@ -19,7 +21,7 @@ class HomeController extends Controller
         $kat2=KategoriMitra::where('id_kategori',3)->count();
         $kat3=KategoriMitra::where('id_kategori',5)->count();
         $kat4=KategoriMitra::where('id_kategori',2)->count();
-        $kat5=KategoriMitra::where('id_kategori',1)->count();
+        $kat5=KategoriMitra::where('id_kategori',1)->count();        
     	return view('home',compact('jasaService','kat1','kat2','kat3','kat4','kat5','kategori'));
     }
 
@@ -55,7 +57,9 @@ class HomeController extends Controller
         $kategori=KategoriMitra::where('id_jasa_service',$id)->get();
         $galeri=Galeri::where('id_jasa_service',$id)->get();
         $jamKerja=JamOperasi::where('id_jasa_service',$id)->get();
-        return view('detail',compact('j','kategori','galeri','jamKerja'));
+        $ulasan=Ulasan::where('id_jasa_service',$id)->orderBy('created_at','desc')->get();
+        $like=Like::where('id_jasa_service',$id)->get();
+        return view('detail',compact('j','kategori','galeri','jamKerja','ulasan','like'));
     }
 
     public function kat1(){
