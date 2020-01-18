@@ -37,7 +37,7 @@
                             <div class="col-md-6">
                                 <div class="fl-wrap list-single-header-column">
                                     <div class="share-holder hid-share">
-                                        <a href="http://wa.me/{{ '62'.substr($j->no_telp,1,12) }}?text=Saya%20tertarik%20dengan%20jasa%20reparasi%20Anda" class="add-list" target="blank" style="margin-top:-15px;">Chat via WA <span><i class="fa fa-whatsapp"></i></span></a>
+                                        <a href="http://wa.me/{{ '6'.substr($j->no_telp,1,12) }}?text=Saya%20tertarik%20dengan%20jasa%20reparasi%20Anda" class="add-list" target="blank" style="margin-top:-15px;">Chat via WA <span><i class="fa fa-whatsapp"></i></span></a>
                                     </div>
                                     <span class="viewed-counter"><i class="fa fa-eye"></i> Telah Dilihat -  156 </span>                                    
                                 </div>
